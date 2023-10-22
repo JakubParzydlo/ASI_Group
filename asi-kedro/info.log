@@ -1,0 +1,125 @@
+2023-10-22 11:47:08,556 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 11:50:02,176 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 11:58:21,111 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 12:01:30,626 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 12:02:24,142 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 12:03:54,483 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 12:04:36,051 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 12:05:13,201 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 12:10:35,583 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 12:19:51,693 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 12:21:30,888 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 12:21:33,262 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro-environment\lib\site-packages\kedro\io\data_catalog.py:301: KedroDeprecationWarning: Defining the 'layer' attribute at the top level is deprecated and will be removed in Kedro 0.19.0. Please move 'layer' inside the 'metadata' -> 'kedro-viz' attributes. See https://docs.kedro.org/en/latest/visualisation/kedro-viz_visualisation.html#visualise-layers for more information.
+  warnings.warn(
+
+2023-10-22 12:22:06,161 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 12:22:08,594 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro-environment\lib\site-packages\kedro\io\data_catalog.py:301: KedroDeprecationWarning: Defining the 'layer' attribute at the top level is deprecated and will be removed in Kedro 0.19.0. Please move 'layer' inside the 'metadata' -> 'kedro-viz' attributes. See https://docs.kedro.org/en/latest/visualisation/kedro-viz_visualisation.html#visualise-layers for more information.
+  warnings.warn(
+
+2023-10-22 12:23:45,066 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 12:23:48,158 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro-environment\lib\site-packages\kedro\io\data_catalog.py:301: KedroDeprecationWarning: Defining the 'layer' attribute at the top level is deprecated and will be removed in Kedro 0.19.0. Please move 'layer' inside the 'metadata' -> 'kedro-viz' attributes. See https://docs.kedro.org/en/latest/visualisation/kedro-viz_visualisation.html#visualise-layers for more information.
+  warnings.warn(
+
+2023-10-22 12:25:54,268 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 12:25:57,136 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro-environment\lib\site-packages\kedro\io\data_catalog.py:301: KedroDeprecationWarning: Defining the 'layer' attribute at the top level is deprecated and will be removed in Kedro 0.19.0. Please move 'layer' inside the 'metadata' -> 'kedro-viz' attributes. See https://docs.kedro.org/en/latest/visualisation/kedro-viz_visualisation.html#visualise-layers for more information.
+  warnings.warn(
+
+2023-10-22 12:28:36,415 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 12:28:39,361 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro-environment\lib\site-packages\kedro\io\data_catalog.py:301: KedroDeprecationWarning: Defining the 'layer' attribute at the top level is deprecated and will be removed in Kedro 0.19.0. Please move 'layer' inside the 'metadata' -> 'kedro-viz' attributes. See https://docs.kedro.org/en/latest/visualisation/kedro-viz_visualisation.html#visualise-layers for more information.
+  warnings.warn(
+
+2023-10-22 12:28:39,737 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-10-22 12:28:39,810 - kedro.pipeline.node - INFO - Running node: node_fill_data_avg: avg_filling([raw_data]) -> [filled_data_avg]
+2023-10-22 12:28:39,889 - kedro.io.data_catalog - INFO - Saving data to 'filled_data_avg' (CSVDataSet)...
+2023-10-22 12:28:39,973 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2023-10-22 12:28:39,976 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-10-22 12:28:40,048 - kedro.pipeline.node - INFO - Running node: node_fill_data_iter: iter_filling([raw_data]) -> [filled_data_iter]
+2023-10-22 12:28:40,181 - kedro.io.data_catalog - INFO - Saving data to 'filled_data_iter' (CSVDataSet)...
+2023-10-22 12:28:40,273 - kedro.runner.sequential_runner - INFO - Completed 2 out of 4 tasks
+2023-10-22 12:28:40,276 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-10-22 12:28:40,343 - kedro.pipeline.node - INFO - Running node: node_fill_data_knn: knn_filling([raw_data]) -> [filled_data_knn]
+2023-10-22 12:28:40,760 - kedro.io.data_catalog - INFO - Saving data to 'filled_data_knn' (CSVDataSet)...
+2023-10-22 12:28:40,869 - kedro.runner.sequential_runner - INFO - Completed 3 out of 4 tasks
+2023-10-22 12:28:40,874 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-10-22 12:28:40,968 - kedro.pipeline.node - INFO - Running node: node_fill_data_tidy: drop_na([raw_data]) -> [filled_data_tidy]
+2023-10-22 12:28:40,971 - kedro.pipeline.node - ERROR - Node 'node_fill_data_tidy: drop_na([raw_data]) -> [filled_data_tidy]' failed with error: 
+'DataFrame' object has no attribute 'dataset'
+2023-10-22 12:28:41,007 - kedro.runner.sequential_runner - WARNING - There are 1 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "node_fill_data_tidy"
+2023-10-22 12:30:20,476 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 12:30:22,951 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro-environment\lib\site-packages\kedro\io\data_catalog.py:301: KedroDeprecationWarning: Defining the 'layer' attribute at the top level is deprecated and will be removed in Kedro 0.19.0. Please move 'layer' inside the 'metadata' -> 'kedro-viz' attributes. See https://docs.kedro.org/en/latest/visualisation/kedro-viz_visualisation.html#visualise-layers for more information.
+  warnings.warn(
+
+2023-10-22 12:30:23,244 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-10-22 12:30:23,296 - kedro.pipeline.node - INFO - Running node: node_fill_data_avg: avg_filling([raw_data]) -> [filled_data_avg]
+2023-10-22 12:30:23,358 - kedro.io.data_catalog - INFO - Saving data to 'filled_data_avg' (CSVDataSet)...
+2023-10-22 12:30:23,430 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2023-10-22 12:30:23,433 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-10-22 12:30:23,500 - kedro.pipeline.node - INFO - Running node: node_fill_data_iter: iter_filling([raw_data]) -> [filled_data_iter]
+2023-10-22 12:30:23,631 - kedro.io.data_catalog - INFO - Saving data to 'filled_data_iter' (CSVDataSet)...
+2023-10-22 12:30:23,699 - kedro.runner.sequential_runner - INFO - Completed 2 out of 4 tasks
+2023-10-22 12:30:23,702 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-10-22 12:30:23,761 - kedro.pipeline.node - INFO - Running node: node_fill_data_knn: knn_filling([raw_data]) -> [filled_data_knn]
+2023-10-22 12:30:24,071 - kedro.io.data_catalog - INFO - Saving data to 'filled_data_knn' (CSVDataSet)...
+2023-10-22 12:30:24,140 - kedro.runner.sequential_runner - INFO - Completed 3 out of 4 tasks
+2023-10-22 12:30:24,143 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-10-22 12:30:24,194 - kedro.pipeline.node - INFO - Running node: node_fill_data_tidy: drop_na([raw_data]) -> [filled_data_tidy]
+2023-10-22 12:30:24,258 - kedro.io.data_catalog - INFO - Saving data to 'filled_data_tidy' (CSVDataSet)...
+2023-10-22 12:30:24,317 - kedro.runner.sequential_runner - INFO - Completed 4 out of 4 tasks
+2023-10-22 12:30:24,321 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2023-10-22 12:34:43,209 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 12:39:03,183 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 12:40:02,032 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 12:40:24,883 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 12:40:27,308 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro-environment\lib\site-packages\kedro\io\data_catalog.py:301: KedroDeprecationWarning: Defining the 'layer' attribute at the top level is deprecated and will be removed in Kedro 0.19.0. Please move 'layer' inside the 'metadata' -> 'kedro-viz' attributes. See https://docs.kedro.org/en/latest/visualisation/kedro-viz_visualisation.html#visualise-layers for more information.
+  warnings.warn(
+
+2023-10-22 12:40:27,611 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-10-22 12:40:27,672 - kedro.pipeline.node - INFO - Running node: node_fill_data_avg: avg_filling([raw_data]) -> [filled_data_avg]
+2023-10-22 12:40:27,738 - kedro.io.data_catalog - INFO - Saving data to 'filled_data_avg' (CSVDataSet)...
+2023-10-22 12:40:27,809 - kedro.runner.sequential_runner - INFO - Completed 1 out of 5 tasks
+2023-10-22 12:40:27,813 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-10-22 12:40:27,867 - kedro.pipeline.node - INFO - Running node: node_fill_data_iter: iter_filling([raw_data]) -> [filled_data_iter]
+2023-10-22 12:40:27,989 - kedro.io.data_catalog - INFO - Saving data to 'filled_data_iter' (CSVDataSet)...
+2023-10-22 12:40:28,062 - kedro.runner.sequential_runner - INFO - Completed 2 out of 5 tasks
+2023-10-22 12:40:28,065 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-10-22 12:40:28,124 - kedro.pipeline.node - INFO - Running node: node_fill_data_knn: knn_filling([raw_data]) -> [filled_data_knn]
+2023-10-22 12:40:28,436 - kedro.io.data_catalog - INFO - Saving data to 'filled_data_knn' (CSVDataSet)...
+2023-10-22 12:40:28,502 - kedro.runner.sequential_runner - INFO - Completed 3 out of 5 tasks
+2023-10-22 12:40:28,505 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-10-22 12:40:28,559 - kedro.pipeline.node - INFO - Running node: node_fill_data_tidy: drop_na([raw_data]) -> [filled_data_tidy]
+2023-10-22 12:40:28,622 - kedro.io.data_catalog - INFO - Saving data to 'filled_data_tidy' (CSVDataSet)...
+2023-10-22 12:40:28,675 - kedro.runner.sequential_runner - INFO - Completed 4 out of 5 tasks
+2023-10-22 12:40:28,677 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-10-22 12:40:28,728 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([raw_data]) -> [train_data,test_data]
+2023-10-22 12:40:28,802 - kedro.io.data_catalog - INFO - Saving data to 'train_data' (CSVDataSet)...
+2023-10-22 12:40:28,884 - kedro.io.data_catalog - INFO - Saving data to 'test_data' (CSVDataSet)...
+2023-10-22 12:40:28,914 - kedro.runner.sequential_runner - INFO - Completed 5 out of 5 tasks
+2023-10-22 12:40:28,917 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2023-10-22 12:41:37,552 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-10-22 12:41:41,546 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro-environment\lib\site-packages\kedro\io\data_catalog.py:301: KedroDeprecationWarning: Defining the 'layer' attribute at the top level is deprecated and will be removed in Kedro 0.19.0. Please move 'layer' inside the 'metadata' -> 'kedro-viz' attributes. See https://docs.kedro.org/en/latest/visualisation/kedro-viz_visualisation.html#visualise-layers for more information.
+  warnings.warn(
+
+2023-10-22 12:41:42,019 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-10-22 12:41:42,094 - kedro.pipeline.node - INFO - Running node: node_fill_data_avg: avg_filling([raw_data]) -> [filled_data_avg]
+2023-10-22 12:41:42,172 - kedro.io.data_catalog - INFO - Saving data to 'filled_data_avg' (CSVDataSet)...
+2023-10-22 12:41:42,248 - kedro.runner.sequential_runner - INFO - Completed 1 out of 5 tasks
+2023-10-22 12:41:42,251 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-10-22 12:41:42,308 - kedro.pipeline.node - INFO - Running node: node_fill_data_iter: iter_filling([raw_data]) -> [filled_data_iter]
+2023-10-22 12:41:42,430 - kedro.io.data_catalog - INFO - Saving data to 'filled_data_iter' (CSVDataSet)...
+2023-10-22 12:41:42,502 - kedro.runner.sequential_runner - INFO - Completed 2 out of 5 tasks
+2023-10-22 12:41:42,504 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-10-22 12:41:42,559 - kedro.pipeline.node - INFO - Running node: node_fill_data_knn: knn_filling([raw_data]) -> [filled_data_knn]
+2023-10-22 12:41:42,891 - kedro.io.data_catalog - INFO - Saving data to 'filled_data_knn' (CSVDataSet)...
+2023-10-22 12:41:42,974 - kedro.runner.sequential_runner - INFO - Completed 3 out of 5 tasks
+2023-10-22 12:41:42,977 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-10-22 12:41:43,028 - kedro.pipeline.node - INFO - Running node: node_fill_data_tidy: drop_na([raw_data]) -> [filled_data_tidy]
+2023-10-22 12:41:43,088 - kedro.io.data_catalog - INFO - Saving data to 'filled_data_tidy' (CSVDataSet)...
+2023-10-22 12:41:43,143 - kedro.runner.sequential_runner - INFO - Completed 4 out of 5 tasks
+2023-10-22 12:41:43,148 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-10-22 12:41:43,193 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([raw_data]) -> [train_data,test_data]
+2023-10-22 12:41:43,262 - kedro.io.data_catalog - INFO - Saving data to 'train_data' (CSVDataSet)...
+2023-10-22 12:41:43,327 - kedro.io.data_catalog - INFO - Saving data to 'test_data' (CSVDataSet)...
+2023-10-22 12:41:43,357 - kedro.runner.sequential_runner - INFO - Completed 5 out of 5 tasks
+2023-10-22 12:41:43,360 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
