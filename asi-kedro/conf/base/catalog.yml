@@ -42,3 +42,32 @@ output_plot:
   filepath: data/08_reporting/output_plot.png
   save_args:
     format: png
+
+linear_regression_model:
+  type: kedro.extras.datasets.pickle.PickleDataSet
+  filepath: data/06_models/linear_regression_model.joblib
+
+random_forest_model:
+  type: kedro.extras.datasets.pickle.PickleDataSet
+  filepath: data/06_models/random_forest_model.joblib
+
+linear_regression_output:
+  type: pandas.CSVDataSet
+  filepath: data/07_model_outputs/linear_regression_output.csv
+
+random_forest_output:
+  type: pandas.CSVDataSet
+  filepath: data/07_model_outputs/random_forest_output.csv
+
+
+random_forest_evaluation_plot:
+  type: matplotlib.MatplotlibWriter
+  filepath: data/08_reporting/random_forest_evaluation_plot.png
+  save_args:
+    format: png
+
+linear_regression_evaluation_plot:
+  type: matplotlib.MatplotlibWriter
+  filepath: data/08_reporting/linear_regression_evaluation_plot.png
+  save_args:
+    format: png

@@ -34,7 +34,7 @@ def create_pipeline(**kwargs) -> Pipeline:
             ),
         node(
             func=split_data,
-            inputs="raw_data",
+            inputs="filled_data_iter",
             outputs=["train_data", "test_data"],
             name="split_data_node"
         ),
