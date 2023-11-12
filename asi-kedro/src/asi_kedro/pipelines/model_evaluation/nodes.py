@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.metrics import roc_curve, precision_recall_curve, auc
+import wandb
 
 
 def evaluate_model(predictions_test: pd.DataFrame):
@@ -35,6 +36,16 @@ def evaluate_model(predictions_test: pd.DataFrame):
         if plot_baseline:
             plot_metric(axes[0], [0, 1], [0, 1], "False positive rate", "True positive rate", "Baseline AUC=0.5", "r--")
         precision, recall, aucpr_score = get_aucpr(labels, predicted_score)
+        run = wandb.init(
+            project='Kedro-ASI-Test1',
+            config={
+            "learning_rate": 0.01,
+            "epochs": 10
+            }
+        )
+        wandb.log({"conf_mat": wandb.plot.confusion_matrix(probs=None,
+                        y_true=labels, preds=predicted_score,
+                        class_names=['0', '1'])})
         plot_metric(axes[1], recall, precision, "Recall", "Precision", "{} AUCPR={:.4f}".format(info, aucpr_score))
         if plot_baseline:
             thr = sum(labels) / len(labels)

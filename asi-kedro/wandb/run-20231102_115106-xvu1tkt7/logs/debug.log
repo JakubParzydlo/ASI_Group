@@ -1,0 +1,16 @@
+2023-11-02 11:51:06,041 INFO    MainThread:16388 [wandb_setup.py:_flush():76] Current SDK version is 0.15.12
+2023-11-02 11:51:06,041 INFO    MainThread:16388 [wandb_setup.py:_flush():76] Configure stats pid to 16388
+2023-11-02 11:51:06,041 INFO    MainThread:16388 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Administrator\.config\wandb\settings
+2023-11-02 11:51:06,042 INFO    MainThread:16388 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Administrator\Desktop\PJATK\Semestr_VII\ASI\ASI_Group\asi-kedro\wandb\settings
+2023-11-02 11:51:06,042 INFO    MainThread:16388 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-11-02 11:51:06,042 INFO    MainThread:16388 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-11-02 11:51:07,443 WARNING MainThread:16388 [wandb_setup.py:_flush():76] Could not find program at -m __main__
+2023-11-02 11:51:07,444 INFO    MainThread:16388 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': None, 'program': '-m __main__'}
+2023-11-02 11:51:07,444 INFO    MainThread:16388 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-11-02 11:51:07,444 INFO    MainThread:16388 [wandb_init.py:_log_setup():528] Logging user logs to C:\Users\Administrator\Desktop\PJATK\Semestr_VII\ASI\ASI_Group\asi-kedro\wandb\run-20231102_115106-xvu1tkt7\logs\debug.log
+2023-11-02 11:51:07,444 INFO    MainThread:16388 [wandb_init.py:_log_setup():529] Logging internal logs to C:\Users\Administrator\Desktop\PJATK\Semestr_VII\ASI\ASI_Group\asi-kedro\wandb\run-20231102_115106-xvu1tkt7\logs\debug-internal.log
+2023-11-02 11:51:07,444 INFO    MainThread:16388 [wandb_init.py:init():568] calling init triggers
+2023-11-02 11:51:07,444 INFO    MainThread:16388 [wandb_init.py:init():575] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.01, 'epochs': 10}
+2023-11-02 11:51:07,444 INFO    MainThread:16388 [wandb_init.py:init():613] wandb.init() called when a run is still active
+2023-11-02 11:51:13,406 WARNING MsgRouterThr:16388 [router.py:message_loop():77] message_loop has been closed
