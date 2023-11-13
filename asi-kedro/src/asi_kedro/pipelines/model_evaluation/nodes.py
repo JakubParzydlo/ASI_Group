@@ -37,7 +37,7 @@ def evaluate_model(predictions_test: pd.DataFrame):
             plot_metric(axes[0], [0, 1], [0, 1], "False positive rate", "True positive rate", "Baseline AUC=0.5", "r--")
         precision, recall, aucpr_score = get_aucpr(labels, predicted_score)
         run = wandb.init(
-            project='Kedro-ASI-Test1',
+            project='Kedro-ASI-Test-Autogluon',
             config={
             "learning_rate": 0.01,
             "epochs": 10

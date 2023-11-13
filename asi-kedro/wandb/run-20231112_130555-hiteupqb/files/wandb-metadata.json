@@ -1,0 +1,54 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.10.9",
+    "heartbeatAt": "2023-11-12T12:05:56.402505",
+    "startedAt": "2023-11-12T12:05:55.594319",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "run"
+    ],
+    "state": "running",
+    "program": "-m __main__",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/JakubParzydlo/ASI_Group.git",
+        "commit": "dccfd365ff49bc1a7ab5ce9c5068819b9ddc8b31"
+    },
+    "email": null,
+    "root": "C:/Users/Administrator/Desktop/PJATK/Semestr_VII/ASI/ASI_Group",
+    "host": "DESKTOP-LE8ELAI",
+    "username": "Administrator",
+    "executable": "D:\\Program Files\\Python\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3400.0,
+        "min": 0.0,
+        "max": 3400.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3400.0,
+            "min": 0.0,
+            "max": 3400.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 110.72325897216797,
+            "used": 105.1190071105957
+        }
+    },
+    "gpu": "NVIDIA GeForce GTX 1660",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1660",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.931770324707031
+    }
+}
