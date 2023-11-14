@@ -8,11 +8,10 @@ from pandas import DataFrame
 from sklearn.experimental import enable_iterative_imputer
 from sklearn.impute import IterativeImputer
 from sklearn.model_selection import train_test_split
-import matplotlib.pyplot as plt
-import seaborn as sns
 from sklearn.model_selection import train_test_split
 from typing import Tuple
-from autogluon import TabularPrediction as task
+from autogluon.tabular import TabularPredictor as task
+from autogluon.tabular import TabularDataset
 
 
 def data_loading(file):
@@ -21,8 +20,8 @@ def data_loading(file):
 
 def split_data(data: DataFrame) -> Tuple[DataFrame, DataFrame]:
     train, test = train_test_split(data, test_size=0.2)  # Assuming a 80-20 split
-    train = task.Dataset(train)
-    test = task.Dataset(test)
+    train = TabularDataset(train)
+    test = TabularDataset(test)
     return train, test
     
     

@@ -4,7 +4,7 @@ generated using Kedro 0.18.14
 """
 
 from kedro.pipeline import Pipeline, pipeline, node
-from .nodes import knn_filling, avg_filling, iter_filling, drop_na, split_data
+from .nodes import split_data
 
 def create_pipeline(**kwargs) -> Pipeline:
     return pipeline([
