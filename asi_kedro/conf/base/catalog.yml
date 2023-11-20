@@ -1,0 +1,73 @@
+# Here you can define all your data sets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://docs.kedro.org/en/stable/data/data_catalog.html
+raw_data:
+    type: pandas.CSVDataSet
+    filepath: data/01_raw/water_potability.csv
+    layer: raw
+    
+filled_data_knn:
+    type: pandas.CSVDataSet
+    filepath: data/03_primary/filled_data_knn.csv
+    layer: primary
+
+filled_data_avg:
+    type: pandas.CSVDataSet
+    filepath: data/03_primary/filled_data_avg.csv
+    layer: primary
+    
+filled_data_iter:
+    type: pandas.CSVDataSet
+    filepath: data/03_primary/filled_data_iter.csv
+    layer: primary
+    
+filled_data_tidy:
+    type: pandas.CSVDataSet
+    filepath: data/03_primary/filled_data_tidy.csv
+    layer: primary
+    
+train_data:
+    type: pandas.CSVDataSet
+    filepath: data/05_model_input/train.csv
+    layer: model_input
+    
+test_data:
+    type: pandas.CSVDataSet
+    filepath: data/05_model_input/test.csv
+    layer: model_input
+    
+output_plot:
+  type: matplotlib.MatplotlibWriter
+  filepath: data/08_reporting/output_plot.png
+  save_args:
+    format: png
+
+linear_regression_model:
+  type: kedro.extras.datasets.pickle.PickleDataSet
+  filepath: data/06_models/linear_regression_model.joblib
+
+random_forest_model:
+  type: kedro.extras.datasets.pickle.PickleDataSet
+  filepath: data/06_models/random_forest_model.joblib
+
+linear_regression_output:
+  type: pandas.CSVDataSet
+  filepath: data/07_model_outputs/linear_regression_output.csv
+
+random_forest_output:
+  type: pandas.CSVDataSet
+  filepath: data/07_model_outputs/random_forest_output.csv
+
+
+random_forest_evaluation_plot:
+  type: matplotlib.MatplotlibWriter
+  filepath: data/08_reporting/random_forest_evaluation_plot.png
+  save_args:
+    format: png
+
+linear_regression_evaluation_plot:
+  type: matplotlib.MatplotlibWriter
+  filepath: data/08_reporting/linear_regression_evaluation_plot.png
+  save_args:
+    format: png

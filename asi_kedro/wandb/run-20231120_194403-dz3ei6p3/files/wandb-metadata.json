@@ -1,0 +1,46 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.10.13",
+    "heartbeatAt": "2023-11-20T18:44:06.266805",
+    "startedAt": "2023-11-20T18:44:03.483490",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "run"
+    ],
+    "state": "running",
+    "program": "-m __main__",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/JakubParzydlo/ASI_Group.git",
+        "commit": "b15c39027574a5b88e8a5d3e936faaa409d93c59"
+    },
+    "email": "101325477+s22074@users.noreply.github.com",
+    "root": "C:/Users/ishim/Documents/GitHub/ASI_Group",
+    "host": "LAPTOP-R92EDSBG",
+    "username": "ishim",
+    "executable": "C:\\Users\\ishim\\anaconda3\\envs\\kedro-environment\\python.exe",
+    "cpu_count": 2,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 1201.0,
+        "min": 0.0,
+        "max": 1201.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1201.0,
+            "min": 0.0,
+            "max": 1201.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 475.4964027404785,
+            "used": 326.33188247680664
+        }
+    },
+    "memory": {
+        "total": 7.745109558105469
+    }
+}

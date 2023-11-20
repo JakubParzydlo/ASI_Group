@@ -1,9 +1,0 @@
-[11/02/23 11:51:05] INFO     Saving data to 'linear_regression_evaluation_plot'                     data_catalog.py:541
-                             (MatplotlibWriter)...
-                    INFO     Completed 10 out of 11 tasks                                       sequential_runner.py:85
-                    INFO     Loading data from 'random_forest_output' (CSVDataSet)...               data_catalog.py:502
-                    INFO     Running node: random_forest_evaluation: evaluate_model([random_forest_output]) node.py:331
-                             -> [random_forest_evaluation_plot]
-[11/02/23 11:51:08] INFO     Saving data to 'random_forest_evaluation_plot' (MatplotlibWriter)...   data_catalog.py:541
-                    INFO     Completed 11 out of 11 tasks                                       sequential_runner.py:85
-                    INFO     Pipeline execution completed successfully.                                   runner.py:105
