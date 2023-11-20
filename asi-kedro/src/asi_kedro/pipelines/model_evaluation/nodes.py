@@ -56,5 +56,5 @@ def evaluate_model(predictions_test: pd.DataFrame):
     fig = plt.figure()
     fig.set_figheight(4.5)
     fig.set_figwidth(4.5 * 2)
-    axes = prediction_summary(predictions_test['y_true'].values, predictions_test['y_pred'].values, "Random Forest")
+    axes = prediction_summary(predictions_test['Potability'].values, predictions_test['Prediction'].values, "Autogluon")
     return fig

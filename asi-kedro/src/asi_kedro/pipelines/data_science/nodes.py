@@ -9,22 +9,16 @@ from sklearn.metrics import accuracy_score, mean_absolute_error, r2_score
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
-from autogluon.tabular import TabularPredictor as task
+from autogluon.tabular import TabularPredictor
 from autogluon.tabular import TabularDataset
 
 def train_model(df: TabularDataset) -> LinearRegression:
-    # Assuming the last column of df is 'target' and rest are features
-    predictor = task.fit(train_data=df, 
-                     label='Potability',  
-                     eval_metric='log_loss', 
-                     auto_stack=True,
-                     verbosity=2,
-                     visualizer='tensorboard')
+    predictor = TabularPredictor(label='Potability').fit(train_data=df)
 
     return predictor
 
-def test_model(predictor: task, test_data: pd.DataFrame) -> DataFrame:
-    
-    # Return metrics in a dictionary
-    return pd.DataFrame(predictor.predict_proba(test_data, as_pandas=True))
-
+def test_model(predictor: TabularPredictor, test_data: pd.DataFrame) -> DataFrame:
+    predictions = pd.DataFrame(predictor.predict(data=test_data, as_pandas=True))
+    predictions.rename(columns={"Potability": "Prediction"}, inplace=True)
+    predictions = pd.concat([predictions, test_data["Potability"]], axis=1)
+    return predictions
