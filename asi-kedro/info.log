@@ -2412,3 +2412,95 @@ fit() missing 1 required positional argument: 'self'
 2023-11-14 11:45:33,657 - kedro.runner.sequential_runner - WARNING - There are 3 nodes that have not run.
 You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
   --from-nodes "split_data_node,predictor_creation"
+2023-11-21 20:11:29,934 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-11-21 20:11:44,457 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro-enironment-autgluon\lib\site-packages\kedro\io\data_catalog.py:301: KedroDeprecationWarning: Defining the 'layer' attribute at the top level is deprecated and will be removed in Kedro 0.19.0. Please move 'layer' inside the 'metadata' -> 'kedro-viz' attributes. See https://docs.kedro.org/en/latest/visualisation/kedro-viz_visualisation.html#visualise-layers for more information.
+  warnings.warn(
+
+2023-11-21 20:11:44,805 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-11-21 20:11:44,879 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([raw_data]) -> [train_data,test_data]
+2023-11-21 20:11:44,971 - kedro.io.data_catalog - INFO - Saving data to 'train_data' (CSVDataSet)...
+2023-11-21 20:11:45,092 - kedro.io.data_catalog - INFO - Saving data to 'test_data' (CSVDataSet)...
+2023-11-21 20:11:45,143 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2023-11-21 20:11:45,145 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (CSVDataSet)...
+2023-11-21 20:11:45,205 - kedro.pipeline.node - INFO - Running node: predictor_creation: train_model([train_data]) -> [predictor]
+2023-11-21 20:11:45,207 - kedro.pipeline.node - ERROR - Node 'predictor_creation: train_model([train_data]) -> [predictor]' failed with error: 
+TabularPredictor.fit() missing 1 required positional argument: 'self'
+2023-11-21 20:11:45,230 - kedro.runner.sequential_runner - WARNING - There are 3 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "predictor_creation,split_data_node"
+2023-11-21 20:14:47,179 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-11-21 20:15:41,446 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-11-21 20:15:45,018 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro-enironment-autgluon\lib\site-packages\kedro\io\data_catalog.py:301: KedroDeprecationWarning: Defining the 'layer' attribute at the top level is deprecated and will be removed in Kedro 0.19.0. Please move 'layer' inside the 'metadata' -> 'kedro-viz' attributes. See https://docs.kedro.org/en/latest/visualisation/kedro-viz_visualisation.html#visualise-layers for more information.
+  warnings.warn(
+
+2023-11-21 20:15:45,152 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-11-21 20:15:45,212 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([raw_data]) -> [train_data,test_data]
+2023-11-21 20:15:45,281 - kedro.io.data_catalog - INFO - Saving data to 'train_data' (CSVDataSet)...
+2023-11-21 20:15:45,352 - kedro.io.data_catalog - INFO - Saving data to 'test_data' (CSVDataSet)...
+2023-11-21 20:15:45,378 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2023-11-21 20:15:45,381 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (CSVDataSet)...
+2023-11-21 20:15:45,434 - kedro.pipeline.node - INFO - Running node: predictor_creation: train_model([train_data]) -> [predictor]
+2023-11-21 20:15:45,436 - kedro.pipeline.node - ERROR - Node 'predictor_creation: train_model([train_data]) -> [predictor]' failed with error: 
+TabularPredictor.__init__() missing 1 required positional argument: 'label'
+2023-11-21 20:15:45,454 - kedro.runner.sequential_runner - WARNING - There are 3 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "split_data_node,predictor_creation"
+2023-11-21 20:17:59,945 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-11-21 20:18:03,496 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro-enironment-autgluon\lib\site-packages\kedro\io\data_catalog.py:301: KedroDeprecationWarning: Defining the 'layer' attribute at the top level is deprecated and will be removed in Kedro 0.19.0. Please move 'layer' inside the 'metadata' -> 'kedro-viz' attributes. See https://docs.kedro.org/en/latest/visualisation/kedro-viz_visualisation.html#visualise-layers for more information.
+  warnings.warn(
+
+2023-11-21 20:18:03,590 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-11-21 20:18:03,636 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([raw_data]) -> [train_data,test_data]
+2023-11-21 20:18:03,699 - kedro.io.data_catalog - INFO - Saving data to 'train_data' (CSVDataSet)...
+2023-11-21 20:18:03,762 - kedro.io.data_catalog - INFO - Saving data to 'test_data' (CSVDataSet)...
+2023-11-21 20:18:03,789 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2023-11-21 20:18:03,792 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (CSVDataSet)...
+2023-11-21 20:18:03,836 - kedro.pipeline.node - INFO - Running node: predictor_creation: train_model([train_data]) -> [predictor]
+2023-11-21 20:18:03,841 - kedro.pipeline.node - ERROR - Node 'predictor_creation: train_model([train_data]) -> [predictor]' failed with error: 
+Unknown `.fit` keyword argument specified: 'eval_metric'
+Valid kwargs: ['ag_args', 'ag_args_ensemble', 'ag_args_fit', 'auto_stack', 'calibrate', 'excluded_model_types', 'feature_generator', 'feature_prune_kwargs', 'holdout_frac', 'hyperparameter_tune_kwargs', 'included_model_types', 'keep_only_best', 'name_suffix', 'num_bag_folds', 'num_bag_sets', 'num_stack_levels', 'pseudo_data', 'refit_full', 'save_space', 'set_best_to_refit_full', 'unlabeled_data', 'use_bag_holdout', 'verbosity']
+2023-11-21 20:18:03,860 - kedro.runner.sequential_runner - WARNING - There are 3 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "split_data_node,predictor_creation"
+2023-11-21 20:19:39,700 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-11-21 20:19:43,067 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro-enironment-autgluon\lib\site-packages\kedro\io\data_catalog.py:301: KedroDeprecationWarning: Defining the 'layer' attribute at the top level is deprecated and will be removed in Kedro 0.19.0. Please move 'layer' inside the 'metadata' -> 'kedro-viz' attributes. See https://docs.kedro.org/en/latest/visualisation/kedro-viz_visualisation.html#visualise-layers for more information.
+  warnings.warn(
+
+2023-11-21 20:19:43,148 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-11-21 20:19:43,196 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([raw_data]) -> [train_data,test_data]
+2023-11-21 20:19:43,263 - kedro.io.data_catalog - INFO - Saving data to 'train_data' (CSVDataSet)...
+2023-11-21 20:19:43,330 - kedro.io.data_catalog - INFO - Saving data to 'test_data' (CSVDataSet)...
+2023-11-21 20:19:43,357 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2023-11-21 20:19:43,360 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (CSVDataSet)...
+2023-11-21 20:19:43,400 - kedro.pipeline.node - INFO - Running node: predictor_creation: train_model([train_data]) -> [predictor]
+2023-11-21 20:19:43,404 - kedro.pipeline.node - ERROR - Node 'predictor_creation: train_model([train_data]) -> [predictor]' failed with error: 
+Unknown `.fit` keyword argument specified: 'visualizer'
+Valid kwargs: ['ag_args', 'ag_args_ensemble', 'ag_args_fit', 'auto_stack', 'calibrate', 'excluded_model_types', 'feature_generator', 'feature_prune_kwargs', 'holdout_frac', 'hyperparameter_tune_kwargs', 'included_model_types', 'keep_only_best', 'name_suffix', 'num_bag_folds', 'num_bag_sets', 'num_stack_levels', 'pseudo_data', 'refit_full', 'save_space', 'set_best_to_refit_full', 'unlabeled_data', 'use_bag_holdout', 'verbosity']
+2023-11-21 20:19:43,426 - kedro.runner.sequential_runner - WARNING - There are 3 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "split_data_node,predictor_creation"
+2023-11-21 20:20:42,332 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-11-21 20:20:45,512 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro-enironment-autgluon\lib\site-packages\kedro\io\data_catalog.py:301: KedroDeprecationWarning: Defining the 'layer' attribute at the top level is deprecated and will be removed in Kedro 0.19.0. Please move 'layer' inside the 'metadata' -> 'kedro-viz' attributes. See https://docs.kedro.org/en/latest/visualisation/kedro-viz_visualisation.html#visualise-layers for more information.
+  warnings.warn(
+
+2023-11-21 20:20:45,596 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (CSVDataSet)...
+2023-11-21 20:20:45,641 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([raw_data]) -> [train_data,test_data]
+2023-11-21 20:20:45,703 - kedro.io.data_catalog - INFO - Saving data to 'train_data' (CSVDataSet)...
+2023-11-21 20:20:45,769 - kedro.io.data_catalog - INFO - Saving data to 'test_data' (CSVDataSet)...
+2023-11-21 20:20:45,795 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2023-11-21 20:20:45,799 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (CSVDataSet)...
+2023-11-21 20:20:45,839 - kedro.pipeline.node - INFO - Running node: predictor_creation: train_model([train_data]) -> [predictor]
+2023-11-21 20:27:17,148 - kedro.io.data_catalog - INFO - Saving data to 'predictor' (MemoryDataset)...
+2023-11-21 20:27:17,182 - kedro.runner.sequential_runner - INFO - Completed 2 out of 4 tasks
+2023-11-21 20:27:17,202 - kedro.io.data_catalog - INFO - Loading data from 'predictor' (MemoryDataset)...
+2023-11-21 20:27:17,249 - kedro.io.data_catalog - INFO - Loading data from 'test_data' (CSVDataSet)...
+2023-11-21 20:27:17,402 - kedro.pipeline.node - INFO - Running node: predictions_creation: test_model([predictor,test_data]) -> [predictions]
+2023-11-21 20:27:21,774 - kedro.io.data_catalog - INFO - Saving data to 'predictions' (MemoryDataset)...
+2023-11-21 20:27:21,792 - kedro.runner.sequential_runner - INFO - Completed 3 out of 4 tasks
+2023-11-21 20:27:21,794 - kedro.io.data_catalog - INFO - Loading data from 'predictions' (MemoryDataset)...
+2023-11-21 20:27:21,827 - kedro.pipeline.node - INFO - Running node: autogluon_evaluation: evaluate_model([predictions]) -> [evaluation_plot]
+2023-11-21 20:27:22,637 - kedro.pipeline.node - ERROR - Node 'autogluon_evaluation: evaluate_model([predictions]) -> [evaluation_plot]' failed with error: 
+'y_true'
+2023-11-21 20:27:22,660 - kedro.runner.sequential_runner - WARNING - There are 1 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "split_data_node,predictor_creation"
