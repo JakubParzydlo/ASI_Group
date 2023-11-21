@@ -2516,3 +2516,6 @@ You can resume the pipeline run from the nearest nodes with persisted inputs by 
 2023-11-21 21:10:20,287 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro-enironment-autgluon\lib\site-packages\kedro\framework\session\session.py:267: KedroDeprecationWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
   warnings.warn(
 
+2023-11-21 21:18:08,867 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-11-21 21:26:25,816 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-11-21 21:30:14,013 - kedro.framework.session.session - INFO - Kedro project asi-kedro
