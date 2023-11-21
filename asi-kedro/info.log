@@ -2504,3 +2504,15 @@ You can resume the pipeline run from the nearest nodes with persisted inputs by 
 2023-11-21 20:27:22,660 - kedro.runner.sequential_runner - WARNING - There are 1 nodes that have not run.
 You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
   --from-nodes "split_data_node,predictor_creation"
+2023-11-21 20:37:37,914 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-11-21 20:37:41,910 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro-enironment-autgluon\lib\site-packages\kedro\io\data_catalog.py:301: KedroDeprecationWarning: Defining the 'layer' attribute at the top level is deprecated and will be removed in Kedro 0.19.0. Please move 'layer' inside the 'metadata' -> 'kedro-viz' attributes. See https://docs.kedro.org/en/latest/visualisation/kedro-viz_visualisation.html#visualise-layers for more information.
+  warnings.warn(
+
+2023-11-21 20:45:27,236 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-11-21 20:54:58,692 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-11-21 20:59:01,223 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-11-21 21:01:16,415 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-11-21 21:01:31,121 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-11-21 21:10:20,287 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro-enironment-autgluon\lib\site-packages\kedro\framework\session\session.py:267: KedroDeprecationWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+

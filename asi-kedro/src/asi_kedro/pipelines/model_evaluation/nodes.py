@@ -53,6 +53,8 @@ def evaluate_model(predictions_test: pd.DataFrame):
         plt.show()
         return axes
 
+    print(predictions_test)
+
     fig = plt.figure()
     fig.set_figheight(4.5)
     fig.set_figwidth(4.5 * 2)

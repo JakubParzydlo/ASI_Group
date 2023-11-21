@@ -3,9 +3,9 @@
 # Documentation for this file format can be found in "The Data Catalog"
 # Link: https://docs.kedro.org/en/stable/data/data_catalog.html
 raw_data:
-    type: pandas.CSVDataSet
-    filepath: data/01_raw/water_potability.csv
-    layer: raw
+    type: pandas.SQLTableDataSet
+    table_name: raw_data
+    credentials: postgresql-credentials
     
 filled_data_knn:
     type: pandas.CSVDataSet
