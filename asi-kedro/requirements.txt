@@ -130,6 +130,7 @@ preshed==3.0.9
 prometheus-client==0.18.0
 protobuf==3.20.2
 psutil==5.9.6
+psycopg2==2.9.9
 py-spy==0.3.14
 py4j==0.10.9.7
 pyarrow==14.0.1
@@ -177,6 +178,7 @@ soupsieve==2.5
 spacy==3.7.2
 spacy-legacy==3.0.12
 spacy-loggers==1.0.5
+SQLAlchemy==1.4.50
 srsly==2.4.8
 statsforecast==1.4.0
 statsmodels==0.14.0
