@@ -2655,3 +2655,49 @@ You can resume the pipeline run from the nearest nodes with persisted inputs by 
 2023-11-25 12:58:16,466 - kedro.runner.sequential_runner - WARNING - There are 1 nodes that have not run.
 You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
   --from-nodes "predictor_creation,split_data_node"
+2023-11-28 10:43:38,223 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-11-28 10:44:23,283 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2023-11-28 10:44:37,443 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([raw_data]) -> [train_data,test_data]
+2023-11-28 10:44:37,565 - kedro.io.data_catalog - INFO - Saving data to 'train_data' (SQLTableDataSet)...
+2023-11-28 10:44:40,562 - kedro.io.data_catalog - INFO - Saving data to 'test_data' (SQLTableDataSet)...
+2023-11-28 10:44:42,423 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2023-11-28 10:44:42,431 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (SQLTableDataSet)...
+2023-11-28 10:44:44,121 - kedro.pipeline.node - INFO - Running node: predictor_creation: train_model([train_data]) -> [predictor]
+2023-11-28 10:52:35,145 - kedro.io.data_catalog - INFO - Saving data to 'predictor' (MemoryDataset)...
+2023-11-28 10:52:35,205 - kedro.runner.sequential_runner - INFO - Completed 2 out of 4 tasks
+2023-11-28 10:52:35,239 - kedro.io.data_catalog - INFO - Loading data from 'predictor' (MemoryDataset)...
+2023-11-28 10:52:35,266 - kedro.io.data_catalog - INFO - Loading data from 'test_data' (SQLTableDataSet)...
+2023-11-28 10:52:39,132 - kedro.pipeline.node - INFO - Running node: predictions_creation: test_model([predictor,test_data]) -> [predictions]
+2023-11-28 10:52:39,866 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro_autogluon\lib\site-packages\sklearn\base.py:465: UserWarning: X does not have valid feature names, but SimpleImputer was fitted with feature names
+  warnings.warn(
+
+2023-11-28 10:52:39,927 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro_autogluon\lib\site-packages\sklearn\base.py:465: UserWarning: X does not have valid feature names, but SimpleImputer was fitted with feature names
+  warnings.warn(
+
+2023-11-28 10:52:39,988 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro_autogluon\lib\site-packages\sklearn\base.py:465: UserWarning: X does not have valid feature names, but SimpleImputer was fitted with feature names
+  warnings.warn(
+
+2023-11-28 10:52:40,047 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro_autogluon\lib\site-packages\sklearn\base.py:465: UserWarning: X does not have valid feature names, but SimpleImputer was fitted with feature names
+  warnings.warn(
+
+2023-11-28 10:52:40,111 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro_autogluon\lib\site-packages\sklearn\base.py:465: UserWarning: X does not have valid feature names, but SimpleImputer was fitted with feature names
+  warnings.warn(
+
+2023-11-28 10:52:40,172 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro_autogluon\lib\site-packages\sklearn\base.py:465: UserWarning: X does not have valid feature names, but SimpleImputer was fitted with feature names
+  warnings.warn(
+
+2023-11-28 10:52:40,229 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro_autogluon\lib\site-packages\sklearn\base.py:465: UserWarning: X does not have valid feature names, but SimpleImputer was fitted with feature names
+  warnings.warn(
+
+2023-11-28 10:52:40,311 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro_autogluon\lib\site-packages\sklearn\base.py:465: UserWarning: X does not have valid feature names, but SimpleImputer was fitted with feature names
+  warnings.warn(
+
+2023-11-28 10:52:40,711 - kedro.io.data_catalog - INFO - Saving data to 'predictions' (MemoryDataset)...
+2023-11-28 10:52:40,733 - kedro.runner.sequential_runner - INFO - Completed 3 out of 4 tasks
+2023-11-28 10:52:40,736 - kedro.io.data_catalog - INFO - Loading data from 'predictions' (MemoryDataset)...
+2023-11-28 10:52:40,767 - kedro.pipeline.node - INFO - Running node: autogluon_evaluation: evaluate_model([predictions]) -> [evaluation_plot]
+2023-11-28 10:52:41,772 - kedro.pipeline.node - ERROR - Node 'autogluon_evaluation: evaluate_model([predictions]) -> [evaluation_plot]' failed with error: 
+module 'matplotlib.cbook' has no attribute '_Stack'
+2023-11-28 10:52:41,789 - kedro.runner.sequential_runner - WARNING - There are 1 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "predictor_creation,split_data_node"
