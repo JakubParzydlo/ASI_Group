@@ -13,10 +13,10 @@ from typing import Tuple
 from autogluon.tabular import TabularPredictor as task
 from autogluon.tabular import TabularDataset
 
-
-def data_loading(file):
-    dataset = read_csv(file)
-    #'../input/water_potability.csv'
+def load_data():
+    file_name = 'water_potability.csv'
+    dataset = read_csv(file_name)
+    return dataset
 
 def split_data(data: DataFrame) -> Tuple[DataFrame, DataFrame]:
     train, test = train_test_split(data, test_size=0.2)  # Assuming a 80-20 split

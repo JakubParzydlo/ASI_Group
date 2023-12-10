@@ -2701,3 +2701,38 @@ module 'matplotlib.cbook' has no attribute '_Stack'
 2023-11-28 10:52:41,789 - kedro.runner.sequential_runner - WARNING - There are 1 nodes that have not run.
 You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
   --from-nodes "predictor_creation,split_data_node"
+2023-12-10 14:24:50,319 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-12-10 14:25:04,606 - kedro.pipeline.node - INFO - Running node: load_csv_file: load_data(None) -> [raw_data]
+2023-12-10 14:25:04,611 - kedro.pipeline.node - ERROR - Node 'load_csv_file: load_data(None) -> [raw_data]' failed with error: 
+[Errno 2] No such file or directory: 'water_potability.csv'
+2023-12-10 14:25:04,617 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2023-12-10 14:28:35,931 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-12-10 14:28:39,692 - kedro.pipeline.node - INFO - Running node: load_csv_file: load_data(None) -> [raw_data]
+2023-12-10 14:28:39,696 - kedro.pipeline.node - ERROR - Node 'load_csv_file: load_data(None) -> [raw_data]' failed with error: 
+[Errno 2] No such file or directory: 'C:\\Users\\ishim\\Documents\\GitHub\\ASI_Group\\asi-kedro\\water_potability.csv'
+2023-12-10 14:28:39,699 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2023-12-10 14:29:24,710 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-12-10 14:29:28,636 - kedro.pipeline.node - INFO - Running node: load_csv_file: load_data(None) -> [raw_data]
+2023-12-10 14:29:28,702 - kedro.io.data_catalog - INFO - Saving data to 'raw_data' (SQLTableDataSet)...
+2023-12-10 14:29:31,139 - kedro.runner.sequential_runner - INFO - Completed 1 out of 5 tasks
+2023-12-10 14:29:31,141 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2023-12-10 14:29:32,148 - sqlalchemy.pool.impl.QueuePool - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\ishim\anaconda3\envs\kedro_autogluon\lib\site-packages\sqlalchemy\pool\base.py", line 763, in _finalize_fairy
+    fairy._reset(pool, transaction_was_reset)
+  File "C:\Users\ishim\anaconda3\envs\kedro_autogluon\lib\site-packages\sqlalchemy\pool\base.py", line 1038, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\ishim\anaconda3\envs\kedro_autogluon\lib\site-packages\sqlalchemy\engine\default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+KeyboardInterrupt
+2023-12-10 14:29:53,931 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2023-12-10 14:29:57,244 - kedro.pipeline.node - INFO - Running node: load_csv_file: load_data(None) -> [raw_data]
+2023-12-10 14:29:57,303 - kedro.io.data_catalog - INFO - Saving data to 'raw_data' (SQLTableDataSet)...
+2023-12-10 14:29:59,453 - kedro.runner.sequential_runner - INFO - Completed 1 out of 5 tasks
+2023-12-10 14:29:59,456 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2023-12-10 14:30:00,403 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([raw_data]) -> [train_data,test_data]
+2023-12-10 14:30:00,458 - kedro.io.data_catalog - INFO - Saving data to 'train_data' (SQLTableDataSet)...
+2023-12-10 14:30:01,908 - kedro.io.data_catalog - INFO - Saving data to 'test_data' (SQLTableDataSet)...
+2023-12-10 14:30:03,112 - kedro.runner.sequential_runner - INFO - Completed 2 out of 5 tasks
+2023-12-10 14:30:03,117 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (SQLTableDataSet)...
+2023-12-10 14:30:03,957 - kedro.pipeline.node - INFO - Running node: predictor_creation: train_model([train_data]) -> [predictor]
