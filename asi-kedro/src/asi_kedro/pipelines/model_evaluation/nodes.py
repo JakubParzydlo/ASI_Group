@@ -36,6 +36,7 @@ def evaluate_model(predictions_test: pd.DataFrame):
         if plot_baseline:
             plot_metric(axes[0], [0, 1], [0, 1], "False positive rate", "True positive rate", "Baseline AUC=0.5", "r--")
         precision, recall, aucpr_score = get_aucpr(labels, predicted_score)
+        # Kolejne hiperparametry do dorzucenia z linii komend
         run = wandb.init(
             project='Kedro-ASI-Test-Autogluon',
             config={

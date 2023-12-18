@@ -19,6 +19,7 @@ def data_loading(file):
     #'../input/water_potability.csv'
 
 def split_data(data: DataFrame) -> Tuple[DataFrame, DataFrame]:
+    # test_size powinien być zmienialny przy użyciu argumentu z linii komend
     train, test = train_test_split(data, test_size=0.2)  # Assuming a 80-20 split
     train = TabularDataset(train)
     test = TabularDataset(test)
