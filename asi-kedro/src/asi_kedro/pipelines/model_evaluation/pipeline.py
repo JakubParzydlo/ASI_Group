@@ -11,7 +11,7 @@ def create_pipeline(**kwargs) -> Pipeline:
         node(
             func=evaluate_model,
             inputs="predictions",
-            outputs="evaluation_plot",
+            outputs=None,
             name="autogluon_evaluation"
         )
     ])

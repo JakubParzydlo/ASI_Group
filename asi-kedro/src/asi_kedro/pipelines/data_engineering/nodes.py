@@ -2,15 +2,10 @@
 This is a boilerplate pipeline 'data_engineering'
 generated using Kedro 0.18.14
 """
-from sklearn.impute import KNNImputer
 from pandas import read_csv
 from pandas import DataFrame
-from sklearn.experimental import enable_iterative_imputer
-from sklearn.impute import IterativeImputer
-from sklearn.model_selection import train_test_split
 from sklearn.model_selection import train_test_split
 from typing import Tuple
-from autogluon.tabular import TabularPredictor as task
 from autogluon.tabular import TabularDataset
 
 def load_data():
