@@ -163,3 +163,4 @@ cython_debug/
 asi-kedro/AutogluonModels/
 asi-kedro/info.log
 asi-kedro/conf/local
+asi-kedro/conf/local/credentials.yml
