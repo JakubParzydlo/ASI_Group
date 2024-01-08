@@ -1,0 +1,46 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.9.18",
+    "heartbeatAt": "2023-12-18T21:46:58.863767",
+    "startedAt": "2023-12-18T21:46:57.018706",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "run"
+    ],
+    "state": "running",
+    "program": "-m __main__",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/JakubParzydlo/ASI_Group.git",
+        "commit": "5590bd7e71f0ffb7fa6da7639e38c5726b29b658"
+    },
+    "email": "s22075@pjwstk.edu.pl",
+    "root": "C:/Users/gamet/Desktop/PJATK/Semestr_VII/ASI/Autogluon/ASI_Group",
+    "host": "Blizna_Laptop",
+    "username": "gamet",
+    "executable": "C:\\Users\\gamet\\anaconda3\\envs\\gluondb\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1209.0,
+        "min": 0.0,
+        "max": 2419.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1209.0,
+            "min": 0.0,
+            "max": 2419.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 911.8007774353027,
+            "used": 316.49658203125
+        }
+    },
+    "memory": {
+        "total": 15.804008483886719
+    }
+}

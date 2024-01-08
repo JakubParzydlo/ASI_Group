@@ -10,14 +10,8 @@ def create_pipeline(**kwargs) -> Pipeline:
     return pipeline([
         node(
             func=evaluate_model,
-            inputs="random_forest_output",
-            outputs="random_forest_evaluation_plot",
-            name="random_forest_evaluation"
-        ),
-        node(
-            func=evaluate_model,
-            inputs="linear_regression_output",
-            outputs="linear_regression_evaluation_plot",
-            name="linear_regression_evaluation"
+            inputs="predictions",
+            outputs=None,
+            name="autogluon_evaluation"
         )
     ])

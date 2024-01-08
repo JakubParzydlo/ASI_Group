@@ -3,39 +3,53 @@
 # Documentation for this file format can be found in "The Data Catalog"
 # Link: https://docs.kedro.org/en/stable/data/data_catalog.html
 raw_data:
-    type: pandas.CSVDataSet
-    filepath: data/01_raw/water_potability.csv
-    layer: raw
+  type: pandas.SQLTableDataSet
+  table_name: raw_data
+  credentials: postgresql-credentials
+  save_args:
+    if_exists: replace
     
 filled_data_knn:
-    type: pandas.CSVDataSet
-    filepath: data/03_primary/filled_data_knn.csv
-    layer: primary
+  type: pandas.SQLTableDataSet
+  table_name: filled_data_knn
+  credentials: postgresql-credentials
+  save_args:
+    if_exists: replace
 
 filled_data_avg:
-    type: pandas.CSVDataSet
-    filepath: data/03_primary/filled_data_avg.csv
-    layer: primary
+  type: pandas.SQLTableDataSet
+  table_name: filled_data_avg
+  credentials: postgresql-credentials
+  save_args:
+    if_exists: replace
     
 filled_data_iter:
-    type: pandas.CSVDataSet
-    filepath: data/03_primary/filled_data_iter.csv
-    layer: primary
+  type: pandas.SQLTableDataSet
+  table_name: filled_data_iter
+  credentials: postgresql-credentials
+  save_args:
+    if_exists: replace
     
 filled_data_tidy:
-    type: pandas.CSVDataSet
-    filepath: data/03_primary/filled_data_tidy.csv
-    layer: primary
+  type: pandas.SQLTableDataSet
+  table_name: filled_data_tidy
+  credentials: postgresql-credentials
+  save_args:
+    if_exists: replace
     
 train_data:
-    type: pandas.CSVDataSet
-    filepath: data/05_model_input/train.csv
-    layer: model_input
+  type: pandas.SQLTableDataSet
+  table_name: train_data
+  credentials: postgresql-credentials
+  save_args:
+    if_exists: replace
     
 test_data:
-    type: pandas.CSVDataSet
-    filepath: data/05_model_input/test.csv
-    layer: model_input
+  type: pandas.SQLTableDataSet
+  table_name: test_data
+  credentials: postgresql-credentials
+  save_args:
+    if_exists: replace
     
 output_plot:
   type: matplotlib.MatplotlibWriter
@@ -52,13 +66,18 @@ random_forest_model:
   filepath: data/06_models/random_forest_model.joblib
 
 linear_regression_output:
-  type: pandas.CSVDataSet
-  filepath: data/07_model_outputs/linear_regression_output.csv
+  type: pandas.SQLTableDataSet
+  table_name: linear_regression_output
+  credentials: postgresql-credentials
+  save_args:
+    if_exists: replace
 
 random_forest_output:
-  type: pandas.CSVDataSet
-  filepath: data/07_model_outputs/random_forest_output.csv
-
+  type: pandas.SQLTableDataSet
+  table_name: random_forest_output
+  credentials: postgresql-credentials
+  save_args:
+    if_exists: replace
 
 random_forest_evaluation_plot:
   type: matplotlib.MatplotlibWriter
