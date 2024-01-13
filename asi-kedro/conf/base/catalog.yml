@@ -3,71 +3,36 @@
 # Documentation for this file format can be found in "The Data Catalog"
 # Link: https://docs.kedro.org/en/stable/data/data_catalog.html
 raw_data:
-    type: pandas.CSVDataSet
-    filepath: data/01_raw/water_potability.csv
-    layer: raw
-    
-filled_data_knn:
-    type: pandas.CSVDataSet
-    filepath: data/03_primary/filled_data_knn.csv
-    layer: primary
-
-filled_data_avg:
-    type: pandas.CSVDataSet
-    filepath: data/03_primary/filled_data_avg.csv
-    layer: primary
-    
-filled_data_iter:
-    type: pandas.CSVDataSet
-    filepath: data/03_primary/filled_data_iter.csv
-    layer: primary
-    
-filled_data_tidy:
-    type: pandas.CSVDataSet
-    filepath: data/03_primary/filled_data_tidy.csv
-    layer: primary
+  type: pandas.SQLTableDataSet
+  table_name: raw_data
+  credentials: db-credentials
+  save_args:
+    if_exists: replace
     
 train_data:
-    type: pandas.CSVDataSet
-    filepath: data/05_model_input/train.csv
-    layer: model_input
+  type: pandas.SQLTableDataSet
+  table_name: train_data
+  credentials: db-credentials
+  save_args:
+    if_exists: replace
     
 test_data:
-    type: pandas.CSVDataSet
-    filepath: data/05_model_input/test.csv
-    layer: model_input
-    
-output_plot:
-  type: matplotlib.MatplotlibWriter
-  filepath: data/08_reporting/output_plot.png
+  type: pandas.SQLTableDataSet
+  table_name: test_data
+  credentials: db-credentials
   save_args:
-    format: png
+    if_exists: replace
 
-linear_regression_model:
-  type: kedro.extras.datasets.pickle.PickleDataSet
-  filepath: data/06_models/linear_regression_model.joblib
+evaluation_metrics:
+    type: pandas.SQLTableDataSet
+    table_name: evaluation_metrics
+    credentials: db-credentials
+    save_args:
+        if_exists: replace
 
-random_forest_model:
-  type: kedro.extras.datasets.pickle.PickleDataSet
-  filepath: data/06_models/random_forest_model.joblib
-
-linear_regression_output:
-  type: pandas.CSVDataSet
-  filepath: data/07_model_outputs/linear_regression_output.csv
-
-random_forest_output:
-  type: pandas.CSVDataSet
-  filepath: data/07_model_outputs/random_forest_output.csv
-
-
-random_forest_evaluation_plot:
-  type: matplotlib.MatplotlibWriter
-  filepath: data/08_reporting/random_forest_evaluation_plot.png
-  save_args:
-    format: png
-
-linear_regression_evaluation_plot:
-  type: matplotlib.MatplotlibWriter
-  filepath: data/08_reporting/linear_regression_evaluation_plot.png
-  save_args:
-    format: png
+confusion_matrix:
+    type: pandas.SQLTableDataSet
+    table_name: confusion_matrix
+    credentials: db-credentials
+    save_args:
+        if_exists: replace

@@ -1,4 +1,4 @@
-# asi_kedro
+# asi-kedro
 
 ## Overview
 

@@ -1,6 +1,6 @@
 [tool.kedro]
 package_name = "asi_kedro"
-project_name = "asi_kedro"
+project_name = "asi-kedro"
 kedro_init_version = "0.18.14"
 
 [tool.isort]
