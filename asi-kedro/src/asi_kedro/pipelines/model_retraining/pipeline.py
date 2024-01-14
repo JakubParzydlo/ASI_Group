@@ -3,8 +3,15 @@ This is a boilerplate pipeline 'model_retraining'
 generated using Kedro 0.18.14
 """
 
-from kedro.pipeline import Pipeline, pipeline
-
+from kedro.pipeline import Pipeline, pipeline, node
+from .nodes import create_synth_data
 
 def create_pipeline(**kwargs) -> Pipeline:
-    return pipeline([])
+    return pipeline([
+        node(
+            func=create_synth_data,
+            inputs="raw_data",
+            outputs="synth_data",
+            name="synthesise_data_node"
+            )
+    ])

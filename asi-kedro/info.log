@@ -163,3 +163,40 @@
 2024-01-12 01:26:53,097 - kedro.io.data_catalog - INFO - Saving data to 'confusion_matrix' (SQLTableDataSet)...
 2024-01-12 01:26:53,117 - kedro.runner.sequential_runner - INFO - Completed 5 out of 5 tasks
 2024-01-12 01:26:53,118 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2024-01-14 17:53:10,456 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 17:53:53,045 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 17:54:16,658 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 17:54:19,569 - kedro.pipeline.node - INFO - Running node: test_node: test(None) -> [synth_data]
+2024-01-14 17:54:19,572 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-14 17:54:19,575 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2024-01-14 17:56:19,395 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 17:57:15,770 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 18:10:11,781 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 18:10:20,109 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 18:10:21,741 - kedro.pipeline.node - INFO - Running node: test_node: create_synth_data([raw_data]) -> None
+2024-01-14 18:10:21,744 - kedro.pipeline.node - ERROR - Node 'test_node: create_synth_data([raw_data]) -> None' failed with error: 
+module 'sdv' has no attribute 'SingleTableMetadata'
+2024-01-14 18:10:21,766 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2024-01-14 18:11:18,037 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 18:11:22,682 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 18:11:22,743 - kedro.pipeline.node - INFO - Running node: test_node: create_synth_data([raw_data]) -> None
+2024-01-14 18:11:22,772 - kedro.pipeline.node - ERROR - Node 'test_node: create_synth_data([raw_data]) -> None' failed with error: 
+failed to execute WindowsPath('dot'), make sure the Graphviz executables are on your systems' PATH
+2024-01-14 18:11:22,790 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2024-01-14 18:12:42,533 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 18:12:47,238 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 18:12:47,295 - kedro.pipeline.node - INFO - Running node: test_node: create_synth_data([raw_data]) -> None
+2024-01-14 18:12:47,321 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2024-01-14 18:12:47,323 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2024-01-14 22:18:10,925 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 22:18:26,234 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 22:18:26,348 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-14 22:18:28,394 - kedro.pipeline.node - ERROR - Node 'synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]' failed with error: 
+module 'pandas' has no attribute 'merger'
+2024-01-14 22:18:28,410 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2024-01-14 22:18:45,242 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 22:18:50,055 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 22:18:50,121 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-14 22:18:52,958 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-14 22:18:52,978 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2024-01-14 22:18:52,981 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
