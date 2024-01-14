@@ -8,17 +8,20 @@ from kedro.pipeline import Pipeline
 from asi_kedro.pipelines import (
     data_engineering as de,
     data_science as ds,
-    model_evaluation as me
+    model_evaluation as me,
+    model_retraining as mr
 )
 
 def register_pipelines() -> Dict[str, Pipeline]:
     data_engineering_pipeline = de.create_pipeline()
     data_science_pipeline = ds.create_pipeline()
     model_evaluation_pipeline = me.create_pipeline()
+    model_retraining_pipeline = mr.create_pipeline()
 
     return {
         "de": data_engineering_pipeline,
         "ds": data_science_pipeline,
         "me": model_evaluation_pipeline,
+        "mr": model_retraining_pipeline,
         "__default__": data_engineering_pipeline + data_science_pipeline + model_evaluation_pipeline
     }
