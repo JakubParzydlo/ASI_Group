@@ -4,7 +4,9 @@ generated using Kedro 0.18.14
 """
 
 from kedro.pipeline import Pipeline, pipeline, node
-from .nodes import create_synth_data
+from .nodes import create_synth_data, retrain_model
+from asi_kedro.pipelines.data_engineering import split_data
+from asi_kedro.pipelines.data_science import test_model
 
 def create_pipeline(**kwargs) -> Pipeline:
     return pipeline([
@@ -13,5 +15,23 @@ def create_pipeline(**kwargs) -> Pipeline:
             inputs="raw_data",
             outputs="synth_data",
             name="synthesise_data_node"
-            )
+            ),
+        node(
+            func=split_data,
+            inputs="synth_data",
+            outputs=["train_data", "test_data"],
+            name="split_data_node"
+            ),
+        node(
+            func=retrain_model,
+            inputs="train_data",
+            outputs="retrained_predictor",
+            name="retrain_model_node"
+            ),
+        node(
+            func=test_model,
+            inputs=["retrained_predictor", "test_data"],
+            outputs="predictions",
+            name="predictions_creation"
+        )   
     ])

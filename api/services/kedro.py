@@ -61,3 +61,8 @@ def get_train_data() -> List[KedroDataSet]:
     raw_date = get_data_from_sqlite('train_data')
 
     return wrapping_sqlite(raw_date)
+
+def get_synth_data() -> List[KedroDataSet]:
+    synth_data = get_data_from_sqlite('synth_data')
+
+    return wrapping_sqlite(synth_data)
