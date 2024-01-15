@@ -3,15 +3,16 @@ This is a boilerplate pipeline 'model_retraining'
 generated using Kedro 0.18.14
 """
 import pandas as pd
+from typing import Tuple
 from sdv.metadata import SingleTableMetadata
 from sdv.single_table import GaussianCopulaSynthesizer
 from autogluon.tabular import TabularPredictor
 import os
 from pathlib import Path
 
-from sdv.evaluation.single_table import get_column_plot
+from sdv.evaluation.single_table import evaluate_quality
 
-def create_synth_data(og_data: pd.DataFrame):
+def create_synth_data(og_data: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
     metadata = SingleTableMetadata()
     metadata.detect_from_dataframe(og_data)
     
@@ -20,12 +21,13 @@ def create_synth_data(og_data: pd.DataFrame):
 
     synth_data = synthesizer.sample(num_rows=3000)
     concat_data = pd.concat([og_data, synth_data])
-    return concat_data
+    return synth_data, concat_data
 
 def retrain_model(train_data: pd.DataFrame):
     predictor_path = get_predictor_path()
     predictor = TabularPredictor.load(predictor_path)
-    predictor.fit(train_data)
+    original_hyperparameters = {'label':'Potability', 'eval_metric':'balanced_accuracy'}
+    predictor.fit(train_data=train_data, hyperparameters=original_hyperparameters)
     return predictor
 
 def get_predictor_path():

@@ -43,3 +43,10 @@ synth_data:
   credentials: db-credentials
   save_args:
     if_exists: replace
+
+concat_data:
+  type: pandas.SQLTableDataSet
+  table_name: synth_data
+  credentials: db-credentials
+  save_args:
+    if_exists: replace

@@ -4,7 +4,8 @@ from pydantic import BaseModel
 
 from api.model.DataSetModel import KedroDataSet
 from api.services import kedro
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
+import subprocess
 
 router = APIRouter()
 

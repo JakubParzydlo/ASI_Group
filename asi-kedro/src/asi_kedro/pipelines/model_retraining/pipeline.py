@@ -6,24 +6,24 @@ generated using Kedro 0.18.14
 from kedro.pipeline import Pipeline, pipeline, node
 from .nodes import create_synth_data, retrain_model
 from asi_kedro.pipelines.data_engineering import split_data
-from asi_kedro.pipelines.data_science import test_model
+from asi_kedro.pipelines.data_science import test_model, train_model
 
 def create_pipeline(**kwargs) -> Pipeline:
     return pipeline([
         node(
             func=create_synth_data,
             inputs="raw_data",
-            outputs="synth_data",
+            outputs=["synth_data", "concat_data"],
             name="synthesise_data_node"
             ),
         node(
             func=split_data,
-            inputs="synth_data",
+            inputs="concat_data",
             outputs=["train_data", "test_data"],
             name="split_data_node"
             ),
         node(
-            func=retrain_model,
+            func=train_model,
             inputs="train_data",
             outputs="retrained_predictor",
             name="retrain_model_node"
