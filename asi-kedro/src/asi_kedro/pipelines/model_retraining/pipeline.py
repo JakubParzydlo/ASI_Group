@@ -11,12 +11,6 @@ from asi_kedro.pipelines.data_science import test_model, train_model
 def create_pipeline(**kwargs) -> Pipeline:
     return pipeline([
         node(
-            func=create_synth_data,
-            inputs="raw_data",
-            outputs=["synth_data", "concat_data"],
-            name="synthesise_data_node"
-            ),
-        node(
             func=split_data,
             inputs="concat_data",
             outputs=["train_data", "test_data"],

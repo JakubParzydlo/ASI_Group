@@ -9,7 +9,8 @@ from asi_kedro.pipelines import (
     data_engineering as de,
     data_science as ds,
     model_evaluation as me,
-    model_retraining as mr
+    model_retraining as mr,
+    synthetic_data_creation as sdc
 )
 
 def register_pipelines() -> Dict[str, Pipeline]:
@@ -17,11 +18,14 @@ def register_pipelines() -> Dict[str, Pipeline]:
     data_science_pipeline = ds.create_pipeline()
     model_evaluation_pipeline = me.create_pipeline()
     model_retraining_pipeline = mr.create_pipeline()
+    synthetic_data_creation_pipeline = sdc.create_pipeline()
 
     return {
         "de": data_engineering_pipeline,
         "ds": data_science_pipeline,
         "me": model_evaluation_pipeline,
         "mr": model_retraining_pipeline,
-        "__default__": data_engineering_pipeline + data_science_pipeline + model_evaluation_pipeline
+        "sdc": synthetic_data_creation_pipeline,
+        "__default__": data_engineering_pipeline + data_science_pipeline + model_evaluation_pipeline,
+        "retrain": model_retraining_pipeline + model_evaluation_pipeline
     }
