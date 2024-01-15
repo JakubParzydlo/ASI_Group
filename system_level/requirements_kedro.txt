@@ -35,7 +35,7 @@ chardet==5.2.0
 charset-normalizer==3.3.2
 click==8.1.7
 cloudpathlib==0.16.0
-cloudpickle==3.0.0
+cloudpickle==2.2.1
 colorama==0.4.6
 colorful==0.5.5
 confection==0.1.3
