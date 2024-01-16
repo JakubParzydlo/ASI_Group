@@ -10,8 +10,8 @@
 # app.include_router(wandb_router)
 # app.include_router(home_router)
 from fastapi import FastAPI
-from api.endpoint.kedro_endpoint import router as kedro_router
+from api.endpoint.dataset_endpoint import router as db_router
 
 app = FastAPI()
 
-app.include_router(kedro_router)
+app.include_router(db_router)
