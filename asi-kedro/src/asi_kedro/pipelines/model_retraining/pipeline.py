@@ -4,7 +4,6 @@ generated using Kedro 0.18.14
 """
 
 from kedro.pipeline import Pipeline, pipeline, node
-from .nodes import create_synth_data, retrain_model
 from asi_kedro.pipelines.data_engineering import split_data
 from asi_kedro.pipelines.data_science import test_model, train_model
 

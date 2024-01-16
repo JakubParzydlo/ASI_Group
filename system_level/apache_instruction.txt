@@ -1,0 +1,28 @@
+Note: Apache Airflow should run on UNIX environment -> aka use Docker
+
+Installation:
+
+1. on fresh virtual environment from system_level folder: 
+pip install -r requirements_apache.txt 
+
+2. configure Apache Airflow
+> to find airflow.cfg, in command line
+airflow info
+> open airflow.cfg
+[core]
+dags_folder = path_to_asi-kedro/dags
+
+3. set correct paths
+> in ./asi-kedro/conf/local/paths.yml [create paths.yml if it doesn't exist]:
+kedro_project_path: "absolute_path_to_asi-kedro" [note: folder from which to run kedro command line commands]
+kedro_virtualenv_path: "absolute_path_to_your_virtual_kedro_environmet"
+
+4. initialize Airflow Database from command line
+airflow db init
+
+If there's another path there just write the new path after ','
+
+Start scheduler:
+
+1. from command line in apache_env
+airflow scheduler
