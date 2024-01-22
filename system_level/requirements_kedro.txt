@@ -220,3 +220,4 @@ xxhash==3.4.1
 yarl==1.9.2
 zipp==3.17.0
 sdv==1.9.0
+streamlit==1.30.0
