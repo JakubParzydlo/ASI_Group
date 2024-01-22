@@ -163,3 +163,383 @@
 2024-01-12 01:26:53,097 - kedro.io.data_catalog - INFO - Saving data to 'confusion_matrix' (SQLTableDataSet)...
 2024-01-12 01:26:53,117 - kedro.runner.sequential_runner - INFO - Completed 5 out of 5 tasks
 2024-01-12 01:26:53,118 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2024-01-14 17:53:10,456 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 17:53:53,045 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 17:54:16,658 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 17:54:19,569 - kedro.pipeline.node - INFO - Running node: test_node: test(None) -> [synth_data]
+2024-01-14 17:54:19,572 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-14 17:54:19,575 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2024-01-14 17:56:19,395 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 17:57:15,770 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 18:10:11,781 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 18:10:20,109 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 18:10:21,741 - kedro.pipeline.node - INFO - Running node: test_node: create_synth_data([raw_data]) -> None
+2024-01-14 18:10:21,744 - kedro.pipeline.node - ERROR - Node 'test_node: create_synth_data([raw_data]) -> None' failed with error: 
+module 'sdv' has no attribute 'SingleTableMetadata'
+2024-01-14 18:10:21,766 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2024-01-14 18:11:18,037 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 18:11:22,682 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 18:11:22,743 - kedro.pipeline.node - INFO - Running node: test_node: create_synth_data([raw_data]) -> None
+2024-01-14 18:11:22,772 - kedro.pipeline.node - ERROR - Node 'test_node: create_synth_data([raw_data]) -> None' failed with error: 
+failed to execute WindowsPath('dot'), make sure the Graphviz executables are on your systems' PATH
+2024-01-14 18:11:22,790 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2024-01-14 18:12:42,533 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 18:12:47,238 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 18:12:47,295 - kedro.pipeline.node - INFO - Running node: test_node: create_synth_data([raw_data]) -> None
+2024-01-14 18:12:47,321 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2024-01-14 18:12:47,323 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2024-01-14 22:18:10,925 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 22:18:26,234 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 22:18:26,348 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-14 22:18:28,394 - kedro.pipeline.node - ERROR - Node 'synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]' failed with error: 
+module 'pandas' has no attribute 'merger'
+2024-01-14 22:18:28,410 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2024-01-14 22:18:45,242 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 22:18:50,055 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 22:18:50,121 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-14 22:18:52,958 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-14 22:18:52,978 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2024-01-14 22:18:52,981 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2024-01-14 22:34:35,894 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 22:38:52,712 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 22:39:36,266 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 22:42:59,383 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:06:17,033 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:06:22,220 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 23:06:22,283 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-14 23:06:24,327 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-14 23:06:24,356 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2024-01-14 23:06:24,358 - kedro.io.data_catalog - INFO - Loading data from 'synth_data' (SQLTableDataSet)...
+2024-01-14 23:06:24,372 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([synth_data]) -> [train_data,test_data]
+2024-01-14 23:06:24,375 - kedro.pipeline.node - ERROR - Node 'split_data_node: split_data([synth_data]) -> [train_data,test_data]' failed with error: 
+With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters.
+2024-01-14 23:06:24,381 - kedro.runner.sequential_runner - WARNING - There are 3 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "split_data_node"
+2024-01-14 23:08:07,377 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:08:12,270 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 23:08:12,350 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-14 23:08:14,536 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-14 23:08:14,563 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2024-01-14 23:08:14,567 - kedro.io.data_catalog - INFO - Loading data from 'synth_data' (SQLTableDataSet)...
+2024-01-14 23:08:14,582 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([synth_data]) -> [train_data,test_data]
+2024-01-14 23:08:14,585 - kedro.pipeline.node - ERROR - Node 'split_data_node: split_data([synth_data]) -> [train_data,test_data]' failed with error: 
+With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters.
+2024-01-14 23:08:14,590 - kedro.runner.sequential_runner - WARNING - There are 3 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "split_data_node"
+2024-01-14 23:08:57,692 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:09:02,669 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 23:09:02,731 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-14 23:09:04,835 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-14 23:09:04,861 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2024-01-14 23:09:04,864 - kedro.io.data_catalog - INFO - Loading data from 'synth_data' (SQLTableDataSet)...
+2024-01-14 23:09:04,879 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([synth_data]) -> [train_data,test_data]
+2024-01-14 23:09:04,882 - kedro.pipeline.node - ERROR - Node 'split_data_node: split_data([synth_data]) -> [train_data,test_data]' failed with error: 
+With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters.
+2024-01-14 23:09:04,887 - kedro.runner.sequential_runner - WARNING - There are 3 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "split_data_node"
+2024-01-14 23:13:29,027 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:13:36,035 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 23:13:36,139 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-14 23:13:38,868 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-14 23:13:38,902 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2024-01-14 23:13:38,905 - kedro.io.data_catalog - INFO - Loading data from 'synth_data' (SQLTableDataSet)...
+2024-01-14 23:13:38,923 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([synth_data]) -> [train_data,test_data]
+2024-01-14 23:13:38,927 - kedro.pipeline.node - ERROR - Node 'split_data_node: split_data([synth_data]) -> [train_data,test_data]' failed with error: 
+With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters.
+2024-01-14 23:13:38,933 - kedro.runner.sequential_runner - WARNING - There are 3 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "split_data_node"
+2024-01-14 23:17:16,092 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:17:26,357 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 23:17:26,450 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-14 23:17:28,684 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-14 23:17:28,764 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2024-01-14 23:17:28,766 - kedro.io.data_catalog - INFO - Loading data from 'synth_data' (SQLTableDataSet)...
+2024-01-14 23:17:28,819 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([synth_data]) -> [train_data,test_data]
+2024-01-14 23:17:28,876 - kedro.io.data_catalog - INFO - Saving data to 'train_data' (SQLTableDataSet)...
+2024-01-14 23:17:28,956 - kedro.io.data_catalog - INFO - Saving data to 'test_data' (SQLTableDataSet)...
+2024-01-14 23:17:29,009 - kedro.runner.sequential_runner - INFO - Completed 2 out of 4 tasks
+2024-01-14 23:17:29,011 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (SQLTableDataSet)...
+2024-01-14 23:17:29,070 - kedro.pipeline.node - INFO - Running node: retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]
+2024-01-14 23:17:29,074 - kedro.pipeline.node - ERROR - Node 'retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]' failed with error: 
+[WinError 3] System nie może odnaleźć określonej ścieżki: 'C:\\Users\\ishim\\Documents\\GitHub\\ASI_Group\\asi-kedro\\src\\AutogluonModels'
+2024-01-14 23:17:29,112 - kedro.runner.sequential_runner - WARNING - There are 2 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "retrain_model_node,split_data_node"
+2024-01-14 23:23:18,311 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:23:23,415 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 23:23:23,478 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-14 23:23:25,770 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-14 23:23:30,330 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2024-01-14 23:23:30,333 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2024-01-14 23:28:49,522 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:28:58,993 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 23:28:59,103 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-14 23:29:01,334 - py.warnings - WARNING - C:\Users\ishim\Documents\GitHub\ASI_Group\asi-kedro\src\asi_kedro\pipelines\model_retraining\nodes.py:20: FutureWarning: In a future version of pandas all arguments of concat except for the argument 'objs' will be keyword-only.
+  concat_data = pd.concat(og_data, synth_data)
+
+2024-01-14 23:29:01,340 - kedro.pipeline.node - ERROR - Node 'synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]' failed with error: 
+first argument must be an iterable of pandas objects, you passed an object of type "DataFrame"
+2024-01-14 23:29:01,369 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2024-01-14 23:33:44,580 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:33:49,097 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 23:33:49,157 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-14 23:33:51,819 - py.warnings - WARNING - C:\Users\ishim\Documents\GitHub\ASI_Group\asi-kedro\src\asi_kedro\pipelines\model_retraining\nodes.py:22: FutureWarning: In a future version of pandas all arguments of concat except for the argument 'objs' will be keyword-only.
+  concat_data = pd.concat(og_data, synth_data)
+
+2024-01-14 23:33:51,824 - kedro.pipeline.node - ERROR - Node 'synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]' failed with error: 
+first argument must be an iterable of pandas objects, you passed an object of type "DataFrame"
+2024-01-14 23:33:51,849 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2024-01-14 23:34:08,925 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:34:13,351 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 23:34:13,411 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-14 23:34:15,453 - kedro.pipeline.node - ERROR - Node 'synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]' failed with error: 
+'NoneType' object is not subscriptable
+2024-01-14 23:34:15,469 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2024-01-14 23:35:13,164 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:35:17,666 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 23:35:17,726 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-14 23:35:19,762 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-14 23:35:19,891 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2024-01-14 23:35:19,893 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2024-01-14 23:36:00,583 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:36:05,364 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 23:36:05,426 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-14 23:36:07,601 - py.warnings - WARNING - C:\Users\ishim\Documents\GitHub\ASI_Group\asi-kedro\src\asi_kedro\pipelines\model_retraining\nodes.py:22: FutureWarning: In a future version of pandas all arguments of concat except for the argument 'objs' will be keyword-only.
+  concat_data = pd.concat(og_data, synth_data)
+
+2024-01-14 23:36:07,605 - kedro.pipeline.node - ERROR - Node 'synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]' failed with error: 
+first argument must be an iterable of pandas objects, you passed an object of type "DataFrame"
+2024-01-14 23:36:07,619 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2024-01-14 23:37:01,475 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:37:06,395 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 23:37:06,456 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-14 23:37:08,527 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-14 23:37:08,629 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2024-01-14 23:37:08,631 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2024-01-14 23:37:49,053 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:37:54,155 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 23:37:54,215 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-14 23:37:56,289 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-14 23:37:56,393 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2024-01-14 23:37:56,395 - kedro.io.data_catalog - INFO - Loading data from 'synth_data' (SQLTableDataSet)...
+2024-01-14 23:37:56,466 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([synth_data]) -> [train_data,test_data]
+2024-01-14 23:37:56,526 - kedro.io.data_catalog - INFO - Saving data to 'train_data' (SQLTableDataSet)...
+2024-01-14 23:37:56,631 - kedro.io.data_catalog - INFO - Saving data to 'test_data' (SQLTableDataSet)...
+2024-01-14 23:37:56,701 - kedro.runner.sequential_runner - INFO - Completed 2 out of 4 tasks
+2024-01-14 23:37:56,703 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (SQLTableDataSet)...
+2024-01-14 23:37:56,786 - kedro.pipeline.node - INFO - Running node: retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]
+2024-01-14 23:37:56,792 - kedro.pipeline.node - ERROR - Node 'retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]' failed with error: 
+[WinError 3] System nie może odnaleźć określonej ścieżki: 'C:\\Users\\ishim\\Documents\\GitHub\\ASI_Group\\asi-kedro\\src\\AutogluonModels'
+2024-01-14 23:37:56,815 - kedro.runner.sequential_runner - WARNING - There are 2 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "split_data_node,retrain_model_node"
+2024-01-14 23:38:44,592 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:38:49,543 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 23:38:49,606 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-14 23:38:51,640 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-14 23:38:51,739 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2024-01-14 23:38:51,741 - kedro.io.data_catalog - INFO - Loading data from 'synth_data' (SQLTableDataSet)...
+2024-01-14 23:38:51,804 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([synth_data]) -> [train_data,test_data]
+2024-01-14 23:38:51,859 - kedro.io.data_catalog - INFO - Saving data to 'train_data' (SQLTableDataSet)...
+2024-01-14 23:38:51,959 - kedro.io.data_catalog - INFO - Saving data to 'test_data' (SQLTableDataSet)...
+2024-01-14 23:38:52,015 - kedro.runner.sequential_runner - INFO - Completed 2 out of 4 tasks
+2024-01-14 23:38:52,017 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (SQLTableDataSet)...
+2024-01-14 23:38:52,099 - kedro.pipeline.node - INFO - Running node: retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]
+2024-01-14 23:38:52,107 - kedro.pipeline.node - ERROR - Node 'retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]' failed with error: 
+[Errno 2] No such file or directory: 'C:\\Users\\ishim\\Documents\\GitHub\\ASI_Group\\asi-kedro\\AutogluonModels\\ag-20240113_181131\\models\\predictor.pkl\\predictor.pkl'
+2024-01-14 23:38:52,126 - kedro.runner.sequential_runner - WARNING - There are 2 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "retrain_model_node,split_data_node"
+2024-01-14 23:49:53,148 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:49:57,720 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (SQLTableDataSet)...
+2024-01-14 23:49:57,787 - kedro.pipeline.node - INFO - Running node: retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]
+2024-01-14 23:49:57,792 - kedro.pipeline.node - ERROR - Node 'retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]' failed with error: 
+[Errno 2] No such file or directory: 'C:\\Users\\ishim\\Documents\\GitHub\\ASI_Group\\asi-kedro\\AutogluonModels\\ag-20240113_181131\\models\\predictor.pkl\\predictor.pkl'
+2024-01-14 23:49:57,809 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2024-01-14 23:51:08,861 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:51:14,169 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (SQLTableDataSet)...
+2024-01-14 23:51:14,235 - kedro.pipeline.node - INFO - Running node: retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]
+2024-01-14 23:51:14,241 - kedro.pipeline.node - ERROR - Node 'retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]' failed with error: 
+[Errno 2] No such file or directory: 'C:\\Users\\ishim\\Documents\\GitHub\\ASI_Group\\asi-kedro\\AutogluonModels\\ag-20240113_181131\\models\\predictor.pkl\\predictor.pkl'
+2024-01-14 23:51:14,257 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2024-01-14 23:51:59,970 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:52:04,661 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (SQLTableDataSet)...
+2024-01-14 23:52:04,731 - kedro.pipeline.node - INFO - Running node: retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]
+2024-01-14 23:52:04,735 - kedro.pipeline.node - ERROR - Node 'retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]' failed with error: 
+[Errno 2] No such file or directory: 'C:\\Users\\ishim\\Documents\\GitHub\\ASI_Group\\asi-kedro\\AutogluonModels\\ag-20240113_181131\\predictor.pkl\\predictor.pkl'
+2024-01-14 23:52:04,753 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2024-01-14 23:52:57,899 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:53:03,247 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (SQLTableDataSet)...
+2024-01-14 23:53:03,333 - kedro.pipeline.node - INFO - Running node: retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]
+2024-01-14 23:53:03,346 - kedro.pipeline.node - ERROR - Node 'retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]' failed with error: 
+Predictor is already fit! To fit additional models, refer to `predictor.fit_extra`, or create a new `Predictor`.
+2024-01-14 23:53:03,369 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2024-01-14 23:55:07,452 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:55:13,085 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (SQLTableDataSet)...
+2024-01-14 23:55:13,156 - kedro.pipeline.node - INFO - Running node: retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]
+2024-01-14 23:55:13,163 - kedro.pipeline.node - ERROR - Node 'retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]' failed with error: 
+Predictor is already fit! To fit additional models, refer to `predictor.fit_extra`, or create a new `Predictor`.
+2024-01-14 23:55:13,184 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2024-01-14 23:59:02,623 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-14 23:59:14,079 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-14 23:59:14,165 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-14 23:59:17,840 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-14 23:59:17,953 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2024-01-14 23:59:17,954 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2024-01-15 00:03:51,765 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-15 00:03:56,715 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-15 00:03:56,787 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-15 00:04:00,203 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-15 00:04:00,301 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2024-01-15 00:04:00,303 - kedro.io.data_catalog - INFO - Loading data from 'synth_data' (SQLTableDataSet)...
+2024-01-15 00:04:00,365 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([synth_data]) -> [train_data,test_data]
+2024-01-15 00:04:00,418 - kedro.io.data_catalog - INFO - Saving data to 'train_data' (SQLTableDataSet)...
+2024-01-15 00:04:00,520 - kedro.io.data_catalog - INFO - Saving data to 'test_data' (SQLTableDataSet)...
+2024-01-15 00:04:00,581 - kedro.runner.sequential_runner - INFO - Completed 2 out of 4 tasks
+2024-01-15 00:04:00,584 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (SQLTableDataSet)...
+2024-01-15 00:04:00,675 - kedro.pipeline.node - INFO - Running node: retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]
+2024-01-15 00:04:00,689 - kedro.pipeline.node - ERROR - Node 'retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]' failed with error: 
+Predictor is already fit! To fit additional models, refer to `predictor.fit_extra`, or create a new `Predictor`.
+2024-01-15 00:04:00,722 - kedro.runner.sequential_runner - WARNING - There are 2 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "split_data_node,retrain_model_node"
+2024-01-15 00:06:36,778 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-15 00:06:42,400 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-15 00:06:42,469 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-15 00:06:45,185 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-15 00:06:45,290 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2024-01-15 00:06:45,293 - kedro.io.data_catalog - INFO - Loading data from 'synth_data' (SQLTableDataSet)...
+2024-01-15 00:06:45,354 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([synth_data]) -> [train_data,test_data]
+2024-01-15 00:06:45,408 - kedro.io.data_catalog - INFO - Saving data to 'train_data' (SQLTableDataSet)...
+2024-01-15 00:06:45,504 - kedro.io.data_catalog - INFO - Saving data to 'test_data' (SQLTableDataSet)...
+2024-01-15 00:06:45,580 - kedro.runner.sequential_runner - INFO - Completed 2 out of 4 tasks
+2024-01-15 00:06:45,582 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (SQLTableDataSet)...
+2024-01-15 00:06:45,642 - kedro.pipeline.node - INFO - Running node: retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]
+2024-01-15 00:06:45,647 - kedro.pipeline.node - ERROR - Node 'retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]' failed with error: 
+fit_extra() missing 1 required positional argument: 'hyperparameters'
+2024-01-15 00:06:45,667 - kedro.runner.sequential_runner - WARNING - There are 2 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "split_data_node,retrain_model_node"
+2024-01-15 00:11:53,624 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-15 00:11:58,576 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-15 00:11:58,674 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-15 00:12:01,730 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-15 00:12:01,853 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2024-01-15 00:12:01,856 - kedro.io.data_catalog - INFO - Loading data from 'synth_data' (SQLTableDataSet)...
+2024-01-15 00:12:01,938 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([synth_data]) -> [train_data,test_data]
+2024-01-15 00:12:01,989 - kedro.io.data_catalog - INFO - Saving data to 'train_data' (SQLTableDataSet)...
+2024-01-15 00:12:02,089 - kedro.io.data_catalog - INFO - Saving data to 'test_data' (SQLTableDataSet)...
+2024-01-15 00:12:02,156 - kedro.runner.sequential_runner - INFO - Completed 2 out of 4 tasks
+2024-01-15 00:12:02,158 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (SQLTableDataSet)...
+2024-01-15 00:12:02,231 - kedro.pipeline.node - INFO - Running node: retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]
+2024-01-15 00:12:02,239 - kedro.pipeline.node - ERROR - Node 'retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]' failed with error: 
+Unknown `.fit` keyword argument specified: 'train_data'
+Valid kwargs: ['ag_args', 'ag_args_ensemble', 'ag_args_fit', 'calibrate', 'excluded_model_types', 'feature_prune_kwargs', 'hyperparameter_tune_kwargs', 'included_model_types', 'keep_only_best', 'name_suffix', 'num_bag_sets', 'num_stack_levels', 'pseudo_data', 'refit_full', 'save_space', 'set_best_to_refit_full', 'verbosity']
+2024-01-15 00:12:02,266 - kedro.runner.sequential_runner - WARNING - There are 2 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "split_data_node,retrain_model_node"
+2024-01-15 00:13:30,334 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-15 00:13:35,973 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-15 00:13:36,059 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-15 00:13:39,100 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-15 00:13:39,203 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2024-01-15 00:13:39,206 - kedro.io.data_catalog - INFO - Loading data from 'synth_data' (SQLTableDataSet)...
+2024-01-15 00:13:39,272 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([synth_data]) -> [train_data,test_data]
+2024-01-15 00:13:39,333 - kedro.io.data_catalog - INFO - Saving data to 'train_data' (SQLTableDataSet)...
+2024-01-15 00:13:39,442 - kedro.io.data_catalog - INFO - Saving data to 'test_data' (SQLTableDataSet)...
+2024-01-15 00:13:39,496 - kedro.runner.sequential_runner - INFO - Completed 2 out of 4 tasks
+2024-01-15 00:13:39,498 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (SQLTableDataSet)...
+2024-01-15 00:13:39,554 - kedro.pipeline.node - INFO - Running node: retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]
+2024-01-15 00:13:39,560 - kedro.pipeline.node - ERROR - Node 'retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]' failed with error: 
+Unknown `.fit` keyword argument specified: 'new_data'
+Valid kwargs: ['ag_args', 'ag_args_ensemble', 'ag_args_fit', 'calibrate', 'excluded_model_types', 'feature_prune_kwargs', 'hyperparameter_tune_kwargs', 'included_model_types', 'keep_only_best', 'name_suffix', 'num_bag_sets', 'num_stack_levels', 'pseudo_data', 'refit_full', 'save_space', 'set_best_to_refit_full', 'verbosity']
+2024-01-15 00:13:39,577 - kedro.runner.sequential_runner - WARNING - There are 2 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "retrain_model_node,split_data_node"
+2024-01-15 00:18:43,854 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-15 00:18:48,514 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-15 00:18:48,582 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-15 00:18:52,899 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-15 00:18:53,054 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2024-01-15 00:18:53,057 - kedro.io.data_catalog - INFO - Loading data from 'synth_data' (SQLTableDataSet)...
+2024-01-15 00:18:53,152 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([synth_data]) -> [train_data,test_data]
+2024-01-15 00:18:53,229 - kedro.io.data_catalog - INFO - Saving data to 'train_data' (SQLTableDataSet)...
+2024-01-15 00:18:53,372 - kedro.io.data_catalog - INFO - Saving data to 'test_data' (SQLTableDataSet)...
+2024-01-15 00:18:53,468 - kedro.runner.sequential_runner - INFO - Completed 2 out of 4 tasks
+2024-01-15 00:18:53,471 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (SQLTableDataSet)...
+2024-01-15 00:18:53,585 - kedro.pipeline.node - INFO - Running node: retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]
+2024-01-15 00:18:53,597 - kedro.pipeline.node - ERROR - Node 'retrain_model_node: retrain_model([train_data]) -> [retrained_predictor]' failed with error: 
+Unknown `.fit` keyword argument specified: 'train_data'
+Valid kwargs: ['ag_args', 'ag_args_ensemble', 'ag_args_fit', 'calibrate', 'excluded_model_types', 'feature_prune_kwargs', 'hyperparameter_tune_kwargs', 'included_model_types', 'keep_only_best', 'name_suffix', 'num_bag_sets', 'num_stack_levels', 'pseudo_data', 'refit_full', 'save_space', 'set_best_to_refit_full', 'verbosity']
+2024-01-15 00:18:53,636 - kedro.runner.sequential_runner - WARNING - There are 2 nodes that have not run.
+You can resume the pipeline run from the nearest nodes with persisted inputs by adding the following argument to your previous command:
+  --from-nodes "retrain_model_node,split_data_node"
+2024-01-15 00:44:53,737 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-15 00:45:08,758 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-15 00:45:08,897 - kedro.pipeline.node - INFO - Running node: synthesise_data_node: create_synth_data([raw_data]) -> [synth_data]
+2024-01-15 00:45:14,522 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-15 00:45:14,712 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2024-01-15 00:45:14,716 - kedro.io.data_catalog - INFO - Loading data from 'synth_data' (SQLTableDataSet)...
+2024-01-15 00:45:14,929 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([synth_data]) -> [train_data,test_data]
+2024-01-15 00:45:15,245 - kedro.io.data_catalog - INFO - Saving data to 'train_data' (SQLTableDataSet)...
+2024-01-15 00:45:15,445 - kedro.io.data_catalog - INFO - Saving data to 'test_data' (SQLTableDataSet)...
+2024-01-15 00:45:15,696 - kedro.runner.sequential_runner - INFO - Completed 2 out of 4 tasks
+2024-01-15 00:45:15,704 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (SQLTableDataSet)...
+2024-01-15 00:45:15,867 - kedro.pipeline.node - INFO - Running node: retrain_model_node: train_model([train_data]) -> [retrained_predictor]
+2024-01-15 00:46:05,867 - kedro.io.data_catalog - INFO - Saving data to 'retrained_predictor' (MemoryDataset)...
+2024-01-15 00:46:05,874 - kedro.runner.sequential_runner - INFO - Completed 3 out of 4 tasks
+2024-01-15 00:46:05,876 - kedro.io.data_catalog - INFO - Loading data from 'retrained_predictor' (MemoryDataset)...
+2024-01-15 00:46:05,881 - kedro.io.data_catalog - INFO - Loading data from 'test_data' (SQLTableDataSet)...
+2024-01-15 00:46:05,959 - kedro.pipeline.node - INFO - Running node: predictions_creation: test_model([retrained_predictor,test_data]) -> [predictions]
+2024-01-15 00:46:06,276 - py.warnings - WARNING - C:\Users\ishim\anaconda3\envs\kedro_env\lib\site-packages\sklearn\base.py:439: UserWarning: X does not have valid feature names, but SimpleImputer was fitted with feature names
+  warnings.warn(
+
+2024-01-15 00:46:06,503 - kedro.io.data_catalog - INFO - Saving data to 'predictions' (MemoryDataset)...
+2024-01-15 00:46:06,515 - kedro.runner.sequential_runner - INFO - Completed 4 out of 4 tasks
+2024-01-15 00:46:06,518 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2024-01-15 00:46:06,522 - kedro.io.data_catalog - INFO - Loading data from 'predictions' (MemoryDataset)...
+2024-01-15 20:10:16,642 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-15 20:11:25,341 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-15 20:11:37,400 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-15 20:11:42,303 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-15 20:11:42,420 - kedro.pipeline.node - INFO - Running node: synth_data_node: create_synth_data([raw_data]) -> [synth_data,concat_data]
+2024-01-15 20:11:44,581 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-15 20:11:44,676 - kedro.io.data_catalog - INFO - Saving data to 'concat_data' (SQLTableDataSet)...
+2024-01-15 20:11:44,774 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2024-01-15 20:11:44,776 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2024-01-15 23:41:35,319 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-15 23:42:09,503 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-15 23:42:17,925 - kedro.io.data_catalog - INFO - Loading data from 'concat_data' (SQLTableDataSet)...
+2024-01-15 23:42:18,237 - kedro.pipeline.node - INFO - Running node: split_data_node: split_data([concat_data]) -> [train_data,test_data]
+2024-01-15 23:42:18,294 - kedro.io.data_catalog - INFO - Saving data to 'train_data' (SQLTableDataSet)...
+2024-01-15 23:42:18,395 - kedro.io.data_catalog - INFO - Saving data to 'test_data' (SQLTableDataSet)...
+2024-01-15 23:42:18,466 - kedro.runner.sequential_runner - INFO - Completed 1 out of 4 tasks
+2024-01-15 23:42:18,469 - kedro.io.data_catalog - INFO - Loading data from 'train_data' (SQLTableDataSet)...
+2024-01-15 23:42:18,554 - kedro.pipeline.node - INFO - Running node: retrain_model_node: train_model([train_data]) -> [retrained_predictor]
+2024-01-15 23:43:10,340 - kedro.io.data_catalog - INFO - Saving data to 'retrained_predictor' (MemoryDataset)...
+2024-01-15 23:43:10,343 - kedro.runner.sequential_runner - INFO - Completed 2 out of 4 tasks
+2024-01-15 23:43:10,346 - kedro.io.data_catalog - INFO - Loading data from 'retrained_predictor' (MemoryDataset)...
+2024-01-15 23:43:10,350 - kedro.io.data_catalog - INFO - Loading data from 'test_data' (SQLTableDataSet)...
+2024-01-15 23:43:10,395 - kedro.pipeline.node - INFO - Running node: predictions_creation: test_model([retrained_predictor,test_data]) -> [predictions]
+2024-01-15 23:43:10,922 - kedro.io.data_catalog - INFO - Saving data to 'predictions' (MemoryDataset)...
+2024-01-15 23:43:10,929 - kedro.runner.sequential_runner - INFO - Completed 3 out of 4 tasks
+2024-01-15 23:43:10,932 - kedro.io.data_catalog - INFO - Loading data from 'predictions' (MemoryDataset)...
+2024-01-15 23:43:10,941 - kedro.pipeline.node - INFO - Running node: autogluon_evaluation: evaluate_model([predictions]) -> [evaluation_metrics,confusion_matrix]
+2024-01-15 23:43:38,912 - kedro.io.data_catalog - INFO - Saving data to 'evaluation_metrics' (SQLTableDataSet)...
+2024-01-15 23:43:38,957 - kedro.io.data_catalog - INFO - Saving data to 'confusion_matrix' (SQLTableDataSet)...
+2024-01-15 23:43:38,989 - kedro.runner.sequential_runner - INFO - Completed 4 out of 4 tasks
+2024-01-15 23:43:38,991 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2024-01-16 10:37:28,885 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-16 10:37:56,678 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-16 10:37:56,698 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2024-01-16 10:44:32,322 - kedro.framework.session.session - INFO - Kedro project asi-kedro
+2024-01-16 10:44:37,501 - kedro.io.data_catalog - INFO - Loading data from 'raw_data' (SQLTableDataSet)...
+2024-01-16 10:44:37,644 - kedro.pipeline.node - INFO - Running node: synth_data_node: create_synth_data([raw_data]) -> [synth_data,concat_data]
+2024-01-16 10:44:43,141 - kedro.io.data_catalog - INFO - Saving data to 'synth_data' (SQLTableDataSet)...
+2024-01-16 10:44:43,336 - kedro.io.data_catalog - INFO - Saving data to 'concat_data' (SQLTableDataSet)...
+2024-01-16 10:44:43,545 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2024-01-16 10:44:43,549 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
