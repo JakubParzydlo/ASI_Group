@@ -1,3 +1,5 @@
+
+
 Projekt służy do tworzenia modeli do predykcji zdatności wody na podstawie danych dostępnych na Kaggle. 
 
 Projekt korzysta z:
