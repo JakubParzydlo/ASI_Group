@@ -1,4 +1,11 @@
 
+<h3 align="center">Projekt z przedmiotu “Architektury
+rozwiązań i wdrożeń SI”</h3>
+<p align="center">
+    <br />
+    <a href="./docs/Dokumentacja_Techniczna.pdf"><strong>Dokumentacja techniczna »</strong></a>
+    <br />
+</p>
 
 Projekt służy do tworzenia modeli do predykcji zdatności wody na podstawie danych dostępnych na Kaggle. 
 
@@ -45,7 +52,7 @@ uvicorn api.main:app --reload
 
 W środowisku kedro_env, z folderu ASI_GROUP należy uruchomić Streamlit za pomocą komendy:
 ```
-run streamlit/stream_app.py
+streamlit run streamlit/stream_app.py
 ```
 
 ## Struktura plików
